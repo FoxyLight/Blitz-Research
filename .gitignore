@@ -1,0 +1,14 @@
+# Proprietary inputs and locally generated analysis data
+/work/
+/outputs/
+*.apk
+*.apkm
+*.aab
+*.so
+*.dex
+*.rsg
+*.smf
+*.asm.txt
+__pycache__/
+*.pyc
+.venv/

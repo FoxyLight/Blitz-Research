@@ -1,0 +1,1476 @@
+{
+  "schema": 1,
+  "apk_sha256": "1b9c3c6b9eb25a3de568802b5242f838e7618425c70b09c4a7fac00408a8f8b4",
+  "elf_sha256": "21764c7e81d4ae5eb4f6fbc5c8acbe2eb40447bb7b345db6f0859333ef0a2b2f",
+  "elf_size": 26337872,
+  "member": "lib/arm64-v8a/libBejBlitz.so",
+  "build_id": "f03da685fe6dd40cb0f322b118225931c4407c91",
+  "architecture": "EM_AARCH64",
+  "tools": {
+    "capstone": "5.0.7",
+    "pyelftools": "0.33"
+  },
+  "functions": [
+    {
+      "address": "0x885eb0",
+      "end": "0x886334",
+      "size": 1156,
+      "label": "RandomGemPicker selection body",
+      "sha256": "dbfd22243e43fe86acc2482cb89d3412d4cbd072212c6b2d70723ea96d4ba670"
+    },
+    {
+      "address": "0x8859e8",
+      "end": "0x885a98",
+      "size": 176,
+      "label": "RandomGemPicker constructor",
+      "sha256": "9274c331fd02ed817fcdad71b84a354b9e9234fabb3c71bc965a1b06f17ac8b0"
+    },
+    {
+      "address": "0x885a98",
+      "end": "0x885b7c",
+      "size": 228,
+      "label": "copy a supplied string row into picker grid",
+      "sha256": "aff57b467a9f4bbda400a586aab6327ebd047c266833789653c4d0d8d7caf588"
+    },
+    {
+      "address": "0x885b9c",
+      "end": "0x885eb0",
+      "size": 788,
+      "label": "build eligible row indexes using string zero test",
+      "sha256": "d5a4f44a6e50ab865adf297a210e408f7de499b461af5f43ac51669fc3bd5c99"
+    },
+    {
+      "address": "0x886334",
+      "end": "0x88633c",
+      "size": 8,
+      "label": "IGemPicker selection adjustor thunk",
+      "sha256": "1b6076d62d930bf5c3ab853231eb3999d719b39551aab7363cb53498797528ad"
+    },
+    {
+      "address": "0x888374",
+      "end": "0x88844c",
+      "size": 216,
+      "label": "GemPickerManager factory",
+      "sha256": "eaabd2e29a3490dd97a201e3134aff9a4f3940b5865c623af4ff24aa7c55ee56"
+    },
+    {
+      "address": "0x888e70",
+      "end": "0x888ea8",
+      "size": 56,
+      "label": "PatternGemPicker constructor",
+      "sha256": "96c59d32e1e9b20c81eeeb4932bb9d3c758c57c82497763ce85467e95f36936e"
+    },
+    {
+      "address": "0x888eb8",
+      "end": "0x888ecc",
+      "size": 20,
+      "label": "PatternGemPicker delegates to Board slot 0x58",
+      "sha256": "a0611c0446df8a03ed4ca345eeaefdad8bb055e3cafb8216087d535f5cd7c2ae"
+    },
+    {
+      "address": "0x8852cc",
+      "end": "0x8855f0",
+      "size": 804,
+      "label": "FinisherStateController configuration",
+      "sha256": "ab421d657338a96bc91c22eeae11cc54074de62b1a798bb6009bd661d7868dfa"
+    },
+    {
+      "address": "0x8855f0",
+      "end": "0x885738",
+      "size": 328,
+      "label": "FinisherStateController update",
+      "sha256": "991029e72275bcfdc0800ef569cf9965b5d890345a66f2d6952c34f0c50846e9"
+    },
+    {
+      "address": "0x88b004",
+      "end": "0x88b138",
+      "size": 308,
+      "label": "picker adapter prefetch",
+      "sha256": "dfe7631b9356dcd3e9c6e1f4907526ffb52fe876a6af2d94ddb21a588d632aed"
+    },
+    {
+      "address": "0x85ab94",
+      "end": "0x85ac8c",
+      "size": 248,
+      "label": "Board RandomColor",
+      "sha256": "30c090daf6bac701bd04118bf46b501e6a179a38d55171f90a72fc030dcb6871"
+    },
+    {
+      "address": "0x858c6c",
+      "end": "0x858d80",
+      "size": 276,
+      "label": "Board reset copies configured palette",
+      "sha256": "0fc22f5c0aad4a6fda775da0021f2ae0654be7344d940941c9a86b98b98f94a8"
+    },
+    {
+      "address": "0x8606f0",
+      "end": "0x8608d8",
+      "size": 488,
+      "label": "BlitzLogic compact and refill orchestration",
+      "sha256": "03d2dcf46d3d8f539691d9a8a99940c216d26e7e74d052f1a31a4d406cf5ec58"
+    },
+    {
+      "address": "0x85a710",
+      "end": "0x85a84c",
+      "size": 316,
+      "label": "Board compaction",
+      "sha256": "9ece5090cb06ea5c4bc7bbf060bfca2bb137b7ae183602e93a061ba41a71534b"
+    },
+    {
+      "address": "0x8609a4",
+      "end": "0x860bcc",
+      "size": 552,
+      "label": "BlitzLogic SpawnGems",
+      "sha256": "b158a04bcec268fd0009f05a78292e73e63d8ee5720424625e67a713562a3878"
+    },
+    {
+      "address": "0x85a408",
+      "end": "0x85a710",
+      "size": 776,
+      "label": "Board creates replacement gem objects",
+      "sha256": "f1843536ea50291b64fe1dd52226e937a5a54c73f91f2da749c1d7755c72a2d2"
+    },
+    {
+      "address": "0x85a938",
+      "end": "0x85a9d0",
+      "size": 152,
+      "label": "assign RandomColor to newly created gems",
+      "sha256": "23f8b5f932b6ca3a9731cafb4421852f6b5bc4dd94c2bf5055e923349e861942"
+    },
+    {
+      "address": "0x860bd8",
+      "end": "0x860c90",
+      "size": 184,
+      "label": "board validation after color assignment",
+      "sha256": "b1d9b7edc31ec999d85b4597fdf8acfc4ce8b2b516fc9694904d84e12cc610bc"
+    },
+    {
+      "address": "0x85a3e4",
+      "end": "0x85a408",
+      "size": 36,
+      "label": "Board delegates match collection to MatchGenerator",
+      "sha256": "0749a4cf731c71b8d52d4d26c5413f3b5867e2abf8314a7c86a81fac1eadaf17"
+    },
+    {
+      "address": "0x83fc0c",
+      "end": "0x840974",
+      "size": 3432,
+      "label": "MatchGenerator worker",
+      "sha256": "81acccb703afc03f8035ea163c4b4539ea20d70c4f2c33b0452407d75499f60e"
+    },
+    {
+      "address": "0x86ef38",
+      "end": "0x86f08c",
+      "size": 340,
+      "label": "MoveFinder scans board",
+      "sha256": "791db9ab64691d8bff5cc321eb46d6130bc5ff024f03b6c90370e93889454865"
+    },
+    {
+      "address": "0x86e6bc",
+      "end": "0x86eba8",
+      "size": 1260,
+      "label": "BlitzRNGManager creates five MT wrappers",
+      "sha256": "ca61e24748f77440b35fe4c6db35fdd9d103eb242a0d6ff15d9cf3bf09188f7a"
+    },
+    {
+      "address": "0x86ec30",
+      "end": "0x86ece0",
+      "size": 176,
+      "label": "BlitzRNGManager reseeds its streams",
+      "sha256": "1fd60771e1f49b3cfebcdbe6cd2b050c5e4f39544e7922af5916fa8cb0af80e9"
+    },
+    {
+      "address": "0x865d34",
+      "end": "0x865d3c",
+      "size": 8,
+      "label": "logic RNG accessor forwarding",
+      "sha256": "dba02170b65b53059b1a22ecec5c37ac71e1fa07cf9594f9cd35ae0f99eeea6f"
+    },
+    {
+      "address": "0x86ece0",
+      "end": "0x86ed28",
+      "size": 72,
+      "label": "RNG lookup by integer key",
+      "sha256": "71ee60bbefc710c04d48fdd481250e5427731fea72c2cf7ed308caf049088cdc"
+    },
+    {
+      "address": "0x8a5d6c",
+      "end": "0x8a5d84",
+      "size": 24,
+      "label": "BlitzRandom constructor",
+      "sha256": "4981a80154a9dc43acbf75f4d450edd29bed7c8361b6b6bd3cee65de8f2d362f"
+    },
+    {
+      "address": "0x8a5d94",
+      "end": "0x8a5f20",
+      "size": 396,
+      "label": "BlitzRandom draw forwarding and diagnostic string construction",
+      "sha256": "62a9f9d533a006b9e05c3d3aabcc37cc53554abd01c20f3fcb8cb2c956edf2f0"
+    },
+    {
+      "address": "0x8a5f20",
+      "end": "0x8a5f58",
+      "size": 56,
+      "label": "BlitzRandom float range transform",
+      "sha256": "ae6c2481cec0e48b05d2b77713a2806685cd3fb8f3f3516c3dc372e894d7cb64"
+    },
+    {
+      "address": "0x8a5f88",
+      "end": "0x8a5fa8",
+      "size": 32,
+      "label": "BlitzRandom integer floor transform",
+      "sha256": "6b7ea946d7c69816b2760cbc1bf33db5d0870dd5c0eb6a0f00d05a3fe91b7378"
+    },
+    {
+      "address": "0x83e684",
+      "end": "0x83e6a4",
+      "size": 32,
+      "label": "MersenneTwister constructor",
+      "sha256": "0a02a7f686c7a83d49e439ca00acc81126f25e4399e7d91d795b37b64f87b266"
+    },
+    {
+      "address": "0x83e6a4",
+      "end": "0x83e8c8",
+      "size": 548,
+      "label": "MersenneTwister seed expansion",
+      "sha256": "69807fde638aea095fc8395e14d16db8aaa63c8ed2846d3150d2bc97d2f13bbb"
+    },
+    {
+      "address": "0x83e8c8",
+      "end": "0x83ea0c",
+      "size": 324,
+      "label": "MersenneTwister state advance and float output",
+      "sha256": "ce6ffef4451c337f0695462f88c1623fff9e2dfc130a08ede200fce26fa16105"
+    },
+    {
+      "address": "0x8710a0",
+      "end": "0x8713b8",
+      "size": 792,
+      "label": "Config defaults construct palette through GemColors",
+      "sha256": "0fe9066937d832e7df08680ec5ebd5b6f96629c863e429ce37c7912b7704b4e4"
+    },
+    {
+      "address": "0x8700e0",
+      "end": "0x8707ec",
+      "size": 1804,
+      "label": "GemColors defaults",
+      "sha256": "6ae263ff32b2421917b09961a5d29b83bd8da7e92fb5304197f53a7bdf347e29"
+    },
+    {
+      "address": "0x8709d8",
+      "end": "0x870c18",
+      "size": 576,
+      "label": "GemColors enumerates integer codes",
+      "sha256": "66839338f16995ad2a46e659e06eac192d3e2a0703efef84ddddecd8de9af227"
+    },
+    {
+      "address": "0x85bdfc",
+      "end": "0x85c8a8",
+      "size": 2732,
+      "label": "BlitzLogic constructor establishes active Config, RNG manager, Board",
+      "sha256": "f90a9b05d13f8be84223874e76d4b57de651f2f3991867d94de75b5b78dc8e1b"
+    },
+    {
+      "address": "0x85f4fc",
+      "end": "0x85f8b4",
+      "size": 952,
+      "label": "logic caller with arguments 1 and 0",
+      "sha256": "6445a872cbd07252c1092bdd7574f8745ad43d7629ae72d46b79e92ec837330a"
+    },
+    {
+      "address": "0x85e3d4",
+      "end": "0x85ea94",
+      "size": 1728,
+      "label": "logic setup caller with configuration dependent second flag",
+      "sha256": "950b29ee31f4cf65422832a027adcd7d55b8f10b25ae87ab34298636cd577155"
+    }
+  ],
+  "relocations": [
+    {
+      "address": "0x17cdcd8",
+      "type": 1027,
+      "addend": "0x48ac3c"
+    },
+    {
+      "address": "0x17cdc28",
+      "type": 1027,
+      "addend": "0x17cdcd0"
+    },
+    {
+      "address": "0x17cdc60",
+      "type": 1027,
+      "addend": "0x885eb0"
+    },
+    {
+      "address": "0x17cdca0",
+      "type": 1027,
+      "addend": "0x886334"
+    },
+    {
+      "address": "0x17ca4c0",
+      "type": 1027,
+      "addend": "0x48a024"
+    },
+    {
+      "address": "0x17ca3a8",
+      "type": 1027,
+      "addend": "0x17ca4b8"
+    },
+    {
+      "address": "0x17ca3d0",
+      "type": 1027,
+      "addend": "0x85ab94"
+    },
+    {
+      "address": "0x17ca480",
+      "type": 1027,
+      "addend": "0x85a408"
+    },
+    {
+      "address": "0x17ca488",
+      "type": 1027,
+      "addend": "0x85a710"
+    },
+    {
+      "address": "0x17ca498",
+      "type": 1027,
+      "addend": "0x85a938"
+    },
+    {
+      "address": "0x17cab88",
+      "type": 1027,
+      "addend": "0x48a0da"
+    },
+    {
+      "address": "0x17ca6f8",
+      "type": 1027,
+      "addend": "0x17cab80"
+    },
+    {
+      "address": "0x17ca7f0",
+      "type": 1027,
+      "addend": "0x8606f0"
+    },
+    {
+      "address": "0x17ca7f8",
+      "type": 1027,
+      "addend": "0x8609a4"
+    },
+    {
+      "address": "0x17ca800",
+      "type": 1027,
+      "addend": "0x860bd8"
+    },
+    {
+      "address": "0x17cde98",
+      "type": 1027,
+      "addend": "0x48acd9"
+    },
+    {
+      "address": "0x17cde80",
+      "type": 1027,
+      "addend": "0x888374"
+    },
+    {
+      "address": "0x17cdf58",
+      "type": 1027,
+      "addend": "0x17cdfe8"
+    },
+    {
+      "address": "0x17cdff0",
+      "type": 1027,
+      "addend": "0x48ad3c"
+    },
+    {
+      "address": "0x17cdbf0",
+      "type": 1027,
+      "addend": "0x48abf3"
+    },
+    {
+      "address": "0x17cdb78",
+      "type": 1027,
+      "addend": "0x8852cc"
+    },
+    {
+      "address": "0x17ce420",
+      "type": 1027,
+      "addend": "0x88b004"
+    },
+    {
+      "address": "0x17d0b78",
+      "type": 1027,
+      "addend": "0x48b8e2"
+    },
+    {
+      "address": "0x17d0b48",
+      "type": 1027,
+      "addend": "0x8a5d94"
+    },
+    {
+      "address": "0x17d0b50",
+      "type": 1027,
+      "addend": "0x8a5f20"
+    },
+    {
+      "address": "0x17d0b60",
+      "type": 1027,
+      "addend": "0x8a5f88"
+    },
+    {
+      "address": "0x17c69c0",
+      "type": 1027,
+      "addend": "0x48994f"
+    },
+    {
+      "address": "0x17c6998",
+      "type": 1027,
+      "addend": "0x83e8c8"
+    },
+    {
+      "address": "0x17cb638",
+      "type": 1027,
+      "addend": "0x8709d8"
+    },
+    {
+      "address": "0x17c6c10",
+      "type": 1027,
+      "addend": "0x83fc0c"
+    },
+    {
+      "address": "0x17cb4a8",
+      "type": 1027,
+      "addend": "0x86ef38"
+    }
+  ],
+  "checkpoints": [
+    {
+      "id": "random_color",
+      "annotation": "Select a 32-bit palette element using RNG stream argument and float upper bound equal to count.",
+      "instructions": [
+        {
+          "address": "0x85abb8",
+          "mnemonic": "ldr",
+          "operands": "x0, [x0, #0x88]"
+        },
+        {
+          "address": "0x85abbc",
+          "mnemonic": "bl",
+          "operands": "#0x865d34"
+        },
+        {
+          "address": "0x85abc4",
+          "mnemonic": "ldp",
+          "operands": "x10, x9, [x19, #0x70]"
+        },
+        {
+          "address": "0x85abcc",
+          "mnemonic": "ldr",
+          "operands": "x8, [x8, #0x30]"
+        },
+        {
+          "address": "0x85abd0",
+          "mnemonic": "sub",
+          "operands": "x9, x9, x10"
+        },
+        {
+          "address": "0x85abd4",
+          "mnemonic": "asr",
+          "operands": "x9, x9, #2"
+        },
+        {
+          "address": "0x85abd8",
+          "mnemonic": "ucvtf",
+          "operands": "s1, x9"
+        },
+        {
+          "address": "0x85abdc",
+          "mnemonic": "blr",
+          "operands": "x8"
+        },
+        {
+          "address": "0x85abec",
+          "mnemonic": "ldr",
+          "operands": "w0, [x8, w0, sxtw #2]"
+        },
+        {
+          "address": "0x85abf8",
+          "mnemonic": "adrp",
+          "operands": "x2, #0x464000"
+        },
+        {
+          "address": "0x85abfc",
+          "mnemonic": "add",
+          "operands": "x2, x2, #0x3b1"
+        },
+        {
+          "address": "0x85ac5c",
+          "mnemonic": "ldr",
+          "operands": "x8, [x19, #0x70]"
+        },
+        {
+          "address": "0x85ac60",
+          "mnemonic": "ldr",
+          "operands": "w0, [x8, x20, lsl #2]"
+        }
+      ]
+    },
+    {
+      "id": "palette_source",
+      "annotation": "Board palette is copied from logic active Config +0x1b0.",
+      "instructions": [
+        {
+          "address": "0x858c78",
+          "mnemonic": "ldr",
+          "operands": "x8, [x0, #0x88]"
+        },
+        {
+          "address": "0x858c80",
+          "mnemonic": "add",
+          "operands": "x0, x0, #0x70"
+        },
+        {
+          "address": "0x858c84",
+          "mnemonic": "ldr",
+          "operands": "x8, [x8, #0x288]"
+        },
+        {
+          "address": "0x858c94",
+          "mnemonic": "ldp",
+          "operands": "x1, x2, [x8, #0x1b0]"
+        },
+        {
+          "address": "0x858c98",
+          "mnemonic": "bl",
+          "operands": "#0x7dcd38"
+        },
+        {
+          "address": "0x87133c",
+          "mnemonic": "bl",
+          "operands": "#0x8700e0"
+        },
+        {
+          "address": "0x871344",
+          "mnemonic": "mov",
+          "operands": "x0, x20"
+        },
+        {
+          "address": "0x871348",
+          "mnemonic": "ldr",
+          "operands": "x9, [x8, #0x20]"
+        },
+        {
+          "address": "0x871350",
+          "mnemonic": "blr",
+          "operands": "x9"
+        },
+        {
+          "address": "0x871378",
+          "mnemonic": "str",
+          "operands": "q0, [x19, #0x1b0]"
+        }
+      ]
+    },
+    {
+      "id": "refill_dispatch",
+      "annotation": "BlitzLogic calls Board compaction, then its own SpawnGems virtual slot.",
+      "instructions": [
+        {
+          "address": "0x860804",
+          "mnemonic": "ldr",
+          "operands": "x0, [x19, #0x2a0]"
+        },
+        {
+          "address": "0x86080c",
+          "mnemonic": "ldr",
+          "operands": "x8, [x8, #0xd8]"
+        },
+        {
+          "address": "0x860810",
+          "mnemonic": "blr",
+          "operands": "x8"
+        },
+        {
+          "address": "0x860818",
+          "mnemonic": "and",
+          "operands": "w1, w22, #1"
+        },
+        {
+          "address": "0x86081c",
+          "mnemonic": "and",
+          "operands": "w2, w21, #1"
+        },
+        {
+          "address": "0x860824",
+          "mnemonic": "ldr",
+          "operands": "x8, [x8, #0xf8]"
+        },
+        {
+          "address": "0x860828",
+          "mnemonic": "blr",
+          "operands": "x8"
+        },
+        {
+          "address": "0x85f7d8",
+          "mnemonic": "mov",
+          "operands": "w1, #1"
+        },
+        {
+          "address": "0x85f7e0",
+          "mnemonic": "mov",
+          "operands": "w2, wzr"
+        },
+        {
+          "address": "0x85f7e4",
+          "mnemonic": "ldr",
+          "operands": "x8, [x8, #0xf0]"
+        },
+        {
+          "address": "0x85f7e8",
+          "mnemonic": "blr",
+          "operands": "x8"
+        }
+      ]
+    },
+    {
+      "id": "spawn_cases",
+      "annotation": "SpawnGems gets new gems and distinguishes zero, one, and multiple items; a flag bypasses bulk recoloring.",
+      "instructions": [
+        {
+          "address": "0x8609dc",
+          "mnemonic": "ldr",
+          "operands": "x0, [x0, #0x2a0]"
+        },
+        {
+          "address": "0x8609e4",
+          "mnemonic": "ldr",
+          "operands": "x9, [x8, #0xd0]"
+        },
+        {
+          "address": "0x8609ec",
+          "mnemonic": "blr",
+          "operands": "x9"
+        },
+        {
+          "address": "0x8609f8",
+          "mnemonic": "asr",
+          "operands": "x8, x8, #3"
+        },
+        {
+          "address": "0x8609fc",
+          "mnemonic": "cbz",
+          "operands": "x8, #0x860b88"
+        },
+        {
+          "address": "0x860a00",
+          "mnemonic": "cmp",
+          "operands": "x8, #1"
+        },
+        {
+          "address": "0x860a04",
+          "mnemonic": "b.ne",
+          "operands": "#0x860a88"
+        },
+        {
+          "address": "0x860a08",
+          "mnemonic": "ldr",
+          "operands": "x8, [x19, #0x288]"
+        },
+        {
+          "address": "0x860a1c",
+          "mnemonic": "ldp",
+          "operands": "x1, x2, [x8, #0x1b0]"
+        },
+        {
+          "address": "0x860a24",
+          "mnemonic": "bl",
+          "operands": "#0x7dcd38"
+        },
+        {
+          "address": "0x860a70",
+          "mnemonic": "ldr",
+          "operands": "x8, [x19]"
+        },
+        {
+          "address": "0x860a74",
+          "mnemonic": "and",
+          "operands": "w1, w20, #1"
+        },
+        {
+          "address": "0x860a7c",
+          "mnemonic": "ldr",
+          "operands": "x8, [x8, #0x100]"
+        },
+        {
+          "address": "0x860a80",
+          "mnemonic": "blr",
+          "operands": "x8"
+        },
+        {
+          "address": "0x860a84",
+          "mnemonic": "tbnz",
+          "operands": "w0, #0, #0x860b88"
+        },
+        {
+          "address": "0x860a88",
+          "mnemonic": "tbnz",
+          "operands": "w21, #0, #0x860a70"
+        },
+        {
+          "address": "0x860a98",
+          "mnemonic": "ldr",
+          "operands": "x8, [x8, #0xe8]"
+        },
+        {
+          "address": "0x860a9c",
+          "mnemonic": "blr",
+          "operands": "x8"
+        }
+      ]
+    },
+    {
+      "id": "spawn_shuffle",
+      "annotation": "Each index swaps with a random index across the full palette count, not a shrinking suffix.",
+      "instructions": [
+        {
+          "address": "0x860a30",
+          "mnemonic": "lsr",
+          "operands": "x10, x9, #2"
+        },
+        {
+          "address": "0x860a58",
+          "mnemonic": "scvtf",
+          "operands": "s8, w10"
+        },
+        {
+          "address": "0x860aa8",
+          "mnemonic": "sbfiz",
+          "operands": "x9, x22, #2, #0x20"
+        },
+        {
+          "address": "0x860aac",
+          "mnemonic": "ldr",
+          "operands": "w10, [x8, x9]"
+        },
+        {
+          "address": "0x860ab0",
+          "mnemonic": "ldr",
+          "operands": "w11, [x8, x24]"
+        },
+        {
+          "address": "0x860ab4",
+          "mnemonic": "str",
+          "operands": "w10, [x8, x24]"
+        },
+        {
+          "address": "0x860ab8",
+          "mnemonic": "add",
+          "operands": "x24, x24, #4"
+        },
+        {
+          "address": "0x860ac0",
+          "mnemonic": "str",
+          "operands": "w11, [x8, x9]"
+        },
+        {
+          "address": "0x860ac8",
+          "mnemonic": "ldr",
+          "operands": "x0, [x19, #0x1a0]"
+        },
+        {
+          "address": "0x860acc",
+          "mnemonic": "mov",
+          "operands": "w1, #1"
+        },
+        {
+          "address": "0x860ad0",
+          "mnemonic": "bl",
+          "operands": "#0x86ece0"
+        },
+        {
+          "address": "0x860ae0",
+          "mnemonic": "ldr",
+          "operands": "x8, [x8, #0x30]"
+        },
+        {
+          "address": "0x860ae4",
+          "mnemonic": "blr",
+          "operands": "x8"
+        }
+      ]
+    },
+    {
+      "id": "spawn_trials",
+      "annotation": "Write candidate to gem +0x54; stop on validation success; otherwise try next and retain last if exhausted.",
+      "instructions": [
+        {
+          "address": "0x860b4c",
+          "mnemonic": "ldur",
+          "operands": "x9, [x29, #-0x20]"
+        },
+        {
+          "address": "0x860b50",
+          "mnemonic": "ldr",
+          "operands": "w8, [x8, x21, lsl #2]"
+        },
+        {
+          "address": "0x860b5c",
+          "mnemonic": "ldr",
+          "operands": "x9, [x9]"
+        },
+        {
+          "address": "0x860b60",
+          "mnemonic": "str",
+          "operands": "w8, [x9, #0x54]"
+        },
+        {
+          "address": "0x860b68",
+          "mnemonic": "ldr",
+          "operands": "x8, [x8, #0x100]"
+        },
+        {
+          "address": "0x860b6c",
+          "mnemonic": "blr",
+          "operands": "x8"
+        },
+        {
+          "address": "0x860b70",
+          "mnemonic": "tbnz",
+          "operands": "w0, #0, #0x860b88"
+        },
+        {
+          "address": "0x860b7c",
+          "mnemonic": "sub",
+          "operands": "x9, x9, x8"
+        },
+        {
+          "address": "0x860b84",
+          "mnemonic": "b.lo",
+          "operands": "#0x860b4c"
+        }
+      ]
+    },
+    {
+      "id": "creation",
+      "annotation": "New gem objects are acquired, reset, assigned coordinates and inserted into board storage.",
+      "instructions": [
+        {
+          "address": "0x85a474",
+          "mnemonic": "ldr",
+          "operands": "x8, [x20, #0xa0]"
+        },
+        {
+          "address": "0x85a478",
+          "mnemonic": "ldr",
+          "operands": "x9, [x8, x21, lsl #3]"
+        },
+        {
+          "address": "0x85a4cc",
+          "mnemonic": "subs",
+          "operands": "w8, w8, #1"
+        },
+        {
+          "address": "0x85a53c",
+          "mnemonic": "ldr",
+          "operands": "x0, [x20, #0xd8]"
+        },
+        {
+          "address": "0x85a548",
+          "mnemonic": "ldr",
+          "operands": "x8, [x8, #0x38]"
+        },
+        {
+          "address": "0x85a54c",
+          "mnemonic": "blr",
+          "operands": "x8"
+        },
+        {
+          "address": "0x85a568",
+          "mnemonic": "ldr",
+          "operands": "x8, [x9, #0x18]"
+        },
+        {
+          "address": "0x85a56c",
+          "mnemonic": "blr",
+          "operands": "x8"
+        },
+        {
+          "address": "0x85a574",
+          "mnemonic": "stp",
+          "operands": "w19, w21, [x23, #0x58]"
+        },
+        {
+          "address": "0x85a508",
+          "mnemonic": "ldr",
+          "operands": "x8, [x20, #0xa0]"
+        },
+        {
+          "address": "0x85a50c",
+          "mnemonic": "str",
+          "operands": "x23, [x8, x24, lsl #3]"
+        }
+      ]
+    },
+    {
+      "id": "bulk_assignment",
+      "annotation": "Each new gem obtains Board RandomColor with stream key 1 and receives color field +0x54.",
+      "instructions": [
+        {
+          "address": "0x85a968",
+          "mnemonic": "mov",
+          "operands": "x19, x1"
+        },
+        {
+          "address": "0x85a96c",
+          "mnemonic": "mov",
+          "operands": "w1, #1"
+        },
+        {
+          "address": "0x85a970",
+          "mnemonic": "ldr",
+          "operands": "x8, [x10, #0x20]"
+        },
+        {
+          "address": "0x85a97c",
+          "mnemonic": "blr",
+          "operands": "x8"
+        },
+        {
+          "address": "0x85a984",
+          "mnemonic": "str",
+          "operands": "w0, [x22, #0x54]"
+        },
+        {
+          "address": "0x85a998",
+          "mnemonic": "mov",
+          "operands": "w1, #1"
+        },
+        {
+          "address": "0x85a9a4",
+          "mnemonic": "ldr",
+          "operands": "x8, [x9, #0x20]"
+        },
+        {
+          "address": "0x85a9a8",
+          "mnemonic": "blr",
+          "operands": "x8"
+        },
+        {
+          "address": "0x85a9b4",
+          "mnemonic": "str",
+          "operands": "w0, [x23, #0x54]"
+        }
+      ]
+    },
+    {
+      "id": "validation",
+      "annotation": "Unless first flag set, collect matches and reject a positive count; then require positive MoveFinder count.",
+      "instructions": [
+        {
+          "address": "0x860bec",
+          "mnemonic": "tbnz",
+          "operands": "w1, #0, #0x860c3c"
+        },
+        {
+          "address": "0x860bf0",
+          "mnemonic": "ldr",
+          "operands": "x0, [x19, #0x2a0]"
+        },
+        {
+          "address": "0x860c00",
+          "mnemonic": "ldr",
+          "operands": "x8, [x8, #0xc8]"
+        },
+        {
+          "address": "0x860c04",
+          "mnemonic": "blr",
+          "operands": "x8"
+        },
+        {
+          "address": "0x860c08",
+          "mnemonic": "ldr",
+          "operands": "x0, [x19, #0x1f8]"
+        },
+        {
+          "address": "0x860c20",
+          "mnemonic": "lsr",
+          "operands": "x21, x9, #3"
+        },
+        {
+          "address": "0x860c24",
+          "mnemonic": "ldr",
+          "operands": "x8, [x8, #0x48]"
+        },
+        {
+          "address": "0x860c28",
+          "mnemonic": "blr",
+          "operands": "x8"
+        },
+        {
+          "address": "0x860c2c",
+          "mnemonic": "cmp",
+          "operands": "w21, #0"
+        },
+        {
+          "address": "0x860c30",
+          "mnemonic": "b.le",
+          "operands": "#0x860c3c"
+        },
+        {
+          "address": "0x860c34",
+          "mnemonic": "mov",
+          "operands": "w0, wzr"
+        },
+        {
+          "address": "0x860c3c",
+          "mnemonic": "ldr",
+          "operands": "x1, [x19, #0x2a0]"
+        },
+        {
+          "address": "0x860c48",
+          "mnemonic": "ldr",
+          "operands": "x0, [x1, #0x90]"
+        },
+        {
+          "address": "0x860c50",
+          "mnemonic": "ldr",
+          "operands": "x8, [x8, #0x30]"
+        },
+        {
+          "address": "0x860c54",
+          "mnemonic": "blr",
+          "operands": "x8"
+        },
+        {
+          "address": "0x860c58",
+          "mnemonic": "ldr",
+          "operands": "x0, [x19, #0x1e8]"
+        },
+        {
+          "address": "0x860c6c",
+          "mnemonic": "lsr",
+          "operands": "x19, x9, #3"
+        },
+        {
+          "address": "0x860c74",
+          "mnemonic": "blr",
+          "operands": "x8"
+        },
+        {
+          "address": "0x860c78",
+          "mnemonic": "cmp",
+          "operands": "w19, #0"
+        },
+        {
+          "address": "0x860c7c",
+          "mnemonic": "cset",
+          "operands": "w0, gt"
+        }
+      ]
+    },
+    {
+      "id": "picker_indexing",
+      "annotation": "First index uses floor of random*(rowCount-1); second uses floor(random*(eligibleColumnCount-1))+1.",
+      "instructions": [
+        {
+          "address": "0x885eec",
+          "mnemonic": "ldr",
+          "operands": "x0, [x0, #0x50]"
+        },
+        {
+          "address": "0x885ef8",
+          "mnemonic": "ldr",
+          "operands": "x8, [x8, #0x20]"
+        },
+        {
+          "address": "0x885efc",
+          "mnemonic": "blr",
+          "operands": "x8"
+        },
+        {
+          "address": "0x885f00",
+          "mnemonic": "ldp",
+          "operands": "x9, x8, [x19, #0x28]"
+        },
+        {
+          "address": "0x885f10",
+          "mnemonic": "sub",
+          "operands": "x8, x8, #1"
+        },
+        {
+          "address": "0x885f18",
+          "mnemonic": "fmul",
+          "operands": "s0, s0, s1"
+        },
+        {
+          "address": "0x885f1c",
+          "mnemonic": "fcvtmu",
+          "operands": "x8, s0"
+        },
+        {
+          "address": "0x885f20",
+          "mnemonic": "ldr",
+          "operands": "w20, [x9, x8, lsl #2]"
+        },
+        {
+          "address": "0x885fa8",
+          "mnemonic": "madd",
+          "operands": "x20, x21, x9, x8"
+        },
+        {
+          "address": "0x88605c",
+          "mnemonic": "ldr",
+          "operands": "x0, [x19, #0x50]"
+        },
+        {
+          "address": "0x88606c",
+          "mnemonic": "ldr",
+          "operands": "x8, [x8, #0x20]"
+        },
+        {
+          "address": "0x886070",
+          "mnemonic": "blr",
+          "operands": "x8"
+        },
+        {
+          "address": "0x886084",
+          "mnemonic": "sub",
+          "operands": "x8, x8, #1"
+        },
+        {
+          "address": "0x88608c",
+          "mnemonic": "fmul",
+          "operands": "s0, s0, s1"
+        },
+        {
+          "address": "0x886090",
+          "mnemonic": "frintm",
+          "operands": "s0, s0"
+        },
+        {
+          "address": "0x886094",
+          "mnemonic": "fadd",
+          "operands": "s8, s0, s8"
+        },
+        {
+          "address": "0x886138",
+          "mnemonic": "ldr",
+          "operands": "w2, [x8, x10, lsl #2]"
+        },
+        {
+          "address": "0x886140",
+          "mnemonic": "ldr",
+          "operands": "x0, [x9, #0x2a0]"
+        },
+        {
+          "address": "0x886148",
+          "mnemonic": "ldr",
+          "operands": "x8, [x9, #0xa0]"
+        },
+        {
+          "address": "0x88614c",
+          "mnemonic": "blr",
+          "operands": "x8"
+        },
+        {
+          "address": "0x886218",
+          "mnemonic": "cmp",
+          "operands": "x8, #1"
+        },
+        {
+          "address": "0x886230",
+          "mnemonic": "add",
+          "operands": "x3, x3, #0x698"
+        },
+        {
+          "address": "0x886234",
+          "mnemonic": "bl",
+          "operands": "#0x17a2f90"
+        },
+        {
+          "address": "0x886238",
+          "mnemonic": "cbnz",
+          "operands": "w0, #0x8861cc"
+        }
+      ]
+    },
+    {
+      "id": "picker_source",
+      "annotation": "Picker grid rows originate in a finisher configuration; adapter then calls picker selection.",
+      "instructions": [
+        {
+          "address": "0x885320",
+          "mnemonic": "bl",
+          "operands": "#0x888344"
+        },
+        {
+          "address": "0x885324",
+          "mnemonic": "str",
+          "operands": "x22, [x19, #0x60]"
+        },
+        {
+          "address": "0x8853c4",
+          "mnemonic": "ldr",
+          "operands": "x0, [x19, #0x60]"
+        },
+        {
+          "address": "0x8853cc",
+          "mnemonic": "mov",
+          "operands": "x2, x20"
+        },
+        {
+          "address": "0x8853d4",
+          "mnemonic": "ldr",
+          "operands": "x8, [x8, #0x18]"
+        },
+        {
+          "address": "0x8853d8",
+          "mnemonic": "blr",
+          "operands": "x8"
+        },
+        {
+          "address": "0x8853dc",
+          "mnemonic": "str",
+          "operands": "x0, [x19, #0x20]"
+        },
+        {
+          "address": "0x8853e8",
+          "mnemonic": "ldr",
+          "operands": "x9, [x8, #0x68]"
+        },
+        {
+          "address": "0x8853f0",
+          "mnemonic": "blr",
+          "operands": "x9"
+        },
+        {
+          "address": "0x88541c",
+          "mnemonic": "ldr",
+          "operands": "x9, [x9, #0x10]"
+        },
+        {
+          "address": "0x885420",
+          "mnemonic": "blr",
+          "operands": "x9"
+        },
+        {
+          "address": "0x88544c",
+          "mnemonic": "ldr",
+          "operands": "x8, [x8, #0x28]"
+        },
+        {
+          "address": "0x885450",
+          "mnemonic": "blr",
+          "operands": "x8"
+        },
+        {
+          "address": "0x88b038",
+          "mnemonic": "ldr",
+          "operands": "x0, [x0, #8]"
+        },
+        {
+          "address": "0x88b040",
+          "mnemonic": "ldr",
+          "operands": "x8, [x8, #0x18]"
+        },
+        {
+          "address": "0x88b044",
+          "mnemonic": "blr",
+          "operands": "x8"
+        }
+      ]
+    },
+    {
+      "id": "factory",
+      "annotation": "Config slot 0x58 selects mode; 0 creates RandomGemPicker and 1 creates PatternGemPicker.",
+      "instructions": [
+        {
+          "address": "0x888398",
+          "mnemonic": "ldr",
+          "operands": "x8, [x8, #0x58]"
+        },
+        {
+          "address": "0x8883a0",
+          "mnemonic": "blr",
+          "operands": "x8"
+        },
+        {
+          "address": "0x8883a4",
+          "mnemonic": "cbz",
+          "operands": "w0, #0x8883fc"
+        },
+        {
+          "address": "0x8883a8",
+          "mnemonic": "cmp",
+          "operands": "w0, #1"
+        },
+        {
+          "address": "0x8883b0",
+          "mnemonic": "cmp",
+          "operands": "w0, #2"
+        },
+        {
+          "address": "0x8883e0",
+          "mnemonic": "bl",
+          "operands": "#0x888dc4"
+        },
+        {
+          "address": "0x88840c",
+          "mnemonic": "bl",
+          "operands": "#0x8859e8"
+        },
+        {
+          "address": "0x888410",
+          "mnemonic": "add",
+          "operands": "x0, x21, #8"
+        },
+        {
+          "address": "0x888424",
+          "mnemonic": "mov",
+          "operands": "x20, x0"
+        },
+        {
+          "address": "0x888428",
+          "mnemonic": "bl",
+          "operands": "#0x888e70"
+        },
+        {
+          "address": "0x88842c",
+          "mnemonic": "add",
+          "operands": "x0, x20, #8"
+        }
+      ]
+    },
+    {
+      "id": "rng_transforms",
+      "annotation": "Float range is low+(high-low)*u; integer transform floors the float.",
+      "instructions": [
+        {
+          "address": "0x8a5f38",
+          "mnemonic": "ldr",
+          "operands": "x8, [x8, #0x18]"
+        },
+        {
+          "address": "0x8a5f3c",
+          "mnemonic": "blr",
+          "operands": "x8"
+        },
+        {
+          "address": "0x8a5f44",
+          "mnemonic": "fsub",
+          "operands": "s1, s8, s9"
+        },
+        {
+          "address": "0x8a5f48",
+          "mnemonic": "fmul",
+          "operands": "s0, s1, s0"
+        },
+        {
+          "address": "0x8a5f4c",
+          "mnemonic": "fadd",
+          "operands": "s0, s0, s9"
+        },
+        {
+          "address": "0x8a5f94",
+          "mnemonic": "ldr",
+          "operands": "x8, [x8, #0x20]"
+        },
+        {
+          "address": "0x8a5f98",
+          "mnemonic": "blr",
+          "operands": "x8"
+        },
+        {
+          "address": "0x8a5f9c",
+          "mnemonic": "fcvtms",
+          "operands": "w0, s0"
+        },
+        {
+          "address": "0x8a5dc4",
+          "mnemonic": "ldr",
+          "operands": "x8, [x8, #0x18]"
+        },
+        {
+          "address": "0x8a5dc8",
+          "mnemonic": "blr",
+          "operands": "x8"
+        },
+        {
+          "address": "0x8a5dd0",
+          "mnemonic": "mov",
+          "operands": "v8.16b, v0.16b"
+        },
+        {
+          "address": "0x8a5ec0",
+          "mnemonic": "mov",
+          "operands": "v0.16b, v8.16b"
+        }
+      ]
+    },
+    {
+      "id": "mt_output",
+      "annotation": "MT-like twist/tempering and 31-bit float scaling; no claims of runtime statistical validation.",
+      "instructions": [
+        {
+          "address": "0x83e8d0",
+          "mnemonic": "cmp",
+          "operands": "w12, #0x270"
+        },
+        {
+          "address": "0x83e918",
+          "mnemonic": "ldr",
+          "operands": "w16, [x13, #0x634]"
+        },
+        {
+          "address": "0x83e9d8",
+          "mnemonic": "eor",
+          "operands": "w8, w8, w8, lsr #11"
+        },
+        {
+          "address": "0x83e9dc",
+          "mnemonic": "and",
+          "operands": "w9, w9, w8, lsl #7"
+        },
+        {
+          "address": "0x83e9e4",
+          "mnemonic": "and",
+          "operands": "w9, w10, w8, lsl #15"
+        },
+        {
+          "address": "0x83e9e8",
+          "mnemonic": "eor",
+          "operands": "w8, w9, w8"
+        },
+        {
+          "address": "0x83e9ec",
+          "mnemonic": "and",
+          "operands": "w9, w8, #0x7fffffff"
+        },
+        {
+          "address": "0x83e9f0",
+          "mnemonic": "eor",
+          "operands": "w8, w9, w8, lsr #18"
+        },
+        {
+          "address": "0x83e9f4",
+          "mnemonic": "mov",
+          "operands": "w9, #0x30000000"
+        },
+        {
+          "address": "0x83e9f8",
+          "mnemonic": "ucvtf",
+          "operands": "s0, w8"
+        },
+        {
+          "address": "0x83e9fc",
+          "mnemonic": "fmov",
+          "operands": "s1, w9"
+        },
+        {
+          "address": "0x83ea00",
+          "mnemonic": "fmul",
+          "operands": "s0, s0, s1"
+        }
+      ]
+    }
+  ]
+}

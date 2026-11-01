@@ -23,16 +23,20 @@ An Android APK provided for local research was independently inspected on **2026
 
 - [APK metadata and native-code inventory](research/apk-2.29.0.29-inventory.md)
 - [Gem generation: evidence, interpretation, and open questions](research/gem-generation.md)
+- [Experiment 02: Native Gem-Generation Analysis](research/experiment-02-native-gem-generation.md)
+- [Experiment 02 reproducible evidence](research/evidence/experiment-02-arm64.json) and [read-only verifier](scripts/verify_experiment_02.py)
 
 ## Current status
 
-**Verified:** The Android APK contains native ARM64 and ARM32 `libBejBlitz.so` libraries. The ARM64 binary contains strings indicating multiple gem-picker, random-number, and gameplay-related components.
+**VERIFIED (static, exact build):** Experiment 02 independently verified all four previously reported addresses and traced board compaction, replacement creation, palette-based color draws, and board validation. `RandomGemPicker` has a finisher consumer that selects existing gems; the replacement-color path uses `Board::RandomColor`. A single-new-gem branch tries palette colors until a board check passes; a bulk branch can redraw colors until validation succeeds.
 
-**Not established:** Whether the game adjusts ordinary refill probabilities based on board state, the player's score, or difficulty; the exact algorithms for random gem selection, spawning, cascades, and scoring.
+**OPEN:** Which branches and configurations run during ordinary timed play, exact probabilities and float endpoints, seed origin, palette overrides, and any score/time/difficulty dependence elsewhere. Static board-validation dependence is established; its runtime frequency and complete rule semantics are not.
+
+**Reproduction:** Capstone 5.0.7 and pyelftools 0.33, with exact APK/ELF SHA-256 gates. The APK run passed 320 checks; ELF-only input passed 319. See Experiment 02 for commands, annotated pseudocode, and limits. No game code was executed and no proprietary binaries are included.
 
 ## Next experiment
 
-Trace from a real board refill / spawn call to the candidate supply and selection logic in the ARM64 native library. Capture reproducible disassembly and call-site evidence before upgrading any behavioral explanation to VERIFIED.
+**Experiment 03: Refill Context and Board Validation.** Trace refill flags from cascade callers, reconstruct match/move acceptance rules, and build an independent model with hand-authored board fixtures. Trace palette overrides and seed propagation while keeping the APK/native code unexecuted. See the [Experiment 02 recommendation](research/experiment-02-native-gem-generation.md#recommended-experiment-03-refill-context-and-board-validation).
 
 ---
 
