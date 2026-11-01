@@ -1,0 +1,1995 @@
+{
+  "schema": 3,
+  "baseline_commit": "92505f2cd5fa16eb5fd9b90822d291829219b3b2",
+  "apk_sha256": "1b9c3c6b9eb25a3de568802b5242f838e7618425c70b09c4a7fac00408a8f8b4",
+  "elf_sha256": "21764c7e81d4ae5eb4f6fbc5c8acbe2eb40447bb7b345db6f0859333ef0a2b2f",
+  "member": "lib/arm64-v8a/libBejBlitz.so",
+  "architecture": "EM_AARCH64",
+  "build_id": "f03da685fe6dd40cb0f322b118225931c4407c91",
+  "functions": [
+    {
+      "address": "0x85f4fc",
+      "end": "0x85f8b4",
+      "size": 952,
+      "sha256": "6445a872cbd07252c1092bdd7574f8745ad43d7629ae72d46b79e92ec837330a",
+      "label": "update/cascade-context caller"
+    },
+    {
+      "address": "0x8606f0",
+      "end": "0x8608d8",
+      "size": 488,
+      "sha256": "03d2dcf46d3d8f539691d9a8a99940c216d26e7e74d052f1a31a4d406cf5ec58",
+      "label": "refill orchestration"
+    },
+    {
+      "address": "0x8609a4",
+      "end": "0x860bcc",
+      "size": 552,
+      "sha256": "b158a04bcec268fd0009f05a78292e73e63d8ee5720424625e67a713562a3878",
+      "label": "spawn branching and retry"
+    },
+    {
+      "address": "0x860bd8",
+      "end": "0x860c90",
+      "size": 184,
+      "sha256": "b1d9b7edc31ec999d85b4597fdf8acfc4ce8b2b516fc9694904d84e12cc610bc",
+      "label": "acceptance predicate"
+    },
+    {
+      "address": "0x85e3d4",
+      "end": "0x85ea94",
+      "size": 1728,
+      "sha256": "950b29ee31f4cf65422832a027adcd7d55b8f10b25ae87ab34298636cd577155",
+      "label": "board-reset/setup context"
+    },
+    {
+      "address": "0x86614c",
+      "end": "0x866214",
+      "size": 200,
+      "sha256": "36714ac1b016f7d61619fefe873d041314c4505c69c6f1af15c5653b01e2dca5",
+      "label": "active-board string/event context"
+    },
+    {
+      "address": "0x8666cc",
+      "end": "0x86670c",
+      "size": 64,
+      "sha256": "c811dd3bb4738b04fd4a5b8f5913c0afc63fce0c69c9a905464c227434294f42",
+      "label": "refill callback"
+    },
+    {
+      "address": "0x85b55c",
+      "end": "0x85b564",
+      "size": 8,
+      "sha256": "33362dd8f25014ff29ec51204738f7d9ce97a77b26efce809970f73aa89c85bc",
+      "label": "TimerLogic gate accessor"
+    },
+    {
+      "address": "0x85c960",
+      "end": "0x85c9ac",
+      "size": 76,
+      "sha256": "32aa4698ea9d4618bfd3b07c8b017e4084e2e343296b552dd1b1efa578e0c7e9",
+      "label": "secondary update gate"
+    },
+    {
+      "address": "0x84100c",
+      "end": "0x841014",
+      "size": 8,
+      "sha256": "e506b0bca2a5826af13852debb9f75b332002ec0cfab486b1ef018b245f484f4",
+      "label": "pending float accessor"
+    },
+    {
+      "address": "0x840ffc",
+      "end": "0x841004",
+      "size": 8,
+      "sha256": "c4fab92e3f56a2840209f016bb98b0fe2a51d9c8819ad3a10cde7cf59d4a8969",
+      "label": "pending byte accessor"
+    },
+    {
+      "address": "0x85a3e4",
+      "end": "0x85a408",
+      "size": 36,
+      "sha256": "0749a4cf731c71b8d52d4d26c5413f3b5867e2abf8314a7c86a81fac1eadaf17",
+      "label": "Board match forwarding"
+    },
+    {
+      "address": "0x83fc0c",
+      "end": "0x840974",
+      "size": 3432,
+      "sha256": "81acccb703afc03f8035ea163c4b4539ea20d70c4f2c33b0452407d75499f60e",
+      "label": "MatchGenerator row/column scans and grouping"
+    },
+    {
+      "address": "0x840974",
+      "end": "0x8409a8",
+      "size": 52,
+      "sha256": "30e715037a356f8f263681fced58b89fb65ae22bfa926460f49c69ac5b8ff704",
+      "label": "matching override accessor"
+    },
+    {
+      "address": "0x84867c",
+      "end": "0x848740",
+      "size": 196,
+      "sha256": "55484b39a7c93fa26e052a3bac6f6b6dcc200a963364de5282069bb52025e1ca",
+      "label": "Matcher start"
+    },
+    {
+      "address": "0x848740",
+      "end": "0x848918",
+      "size": 472,
+      "sha256": "2e821b93bb8ac6cff46326ed7d158127671d1cc85d8b7b6cffac5615ef7e48d3",
+      "label": "Matcher advance"
+    },
+    {
+      "address": "0x848918",
+      "end": "0x848944",
+      "size": 44,
+      "sha256": "ab6ac8609c02a377a6957a5e8773d05e85db14042f8687a94c1457fd3b31ecd7",
+      "label": "Matcher finish/reset"
+    },
+    {
+      "address": "0x848944",
+      "end": "0x848ac4",
+      "size": 384,
+      "sha256": "da85cdc2cadd8889d5efc95e95747f664288f7bc1427c4b5fa9d2fc3a17421ae",
+      "label": "Matcher emit threshold"
+    },
+    {
+      "address": "0x84127c",
+      "end": "0x8412cc",
+      "size": 80,
+      "sha256": "591790a1fad3bafa3da56e75eea2ef25074d541331da618fa639655b2f1ee7e6",
+      "label": "Gem eligibility"
+    },
+    {
+      "address": "0x8588ec",
+      "end": "0x858948",
+      "size": 92,
+      "sha256": "4702dda7485d97ed3417bdce036b048c89128ef8e290596f1bb68bdc8d357143",
+      "label": "raw Match bounding box overlap"
+    },
+    {
+      "address": "0x8586f8",
+      "end": "0x8588ec",
+      "size": 500,
+      "sha256": "8038cacccadc6c36290922624b995ee43e3bed913c4b281c29bad1e0addd5f01",
+      "label": "raw Match initialization and bounds"
+    },
+    {
+      "address": "0x86ef38",
+      "end": "0x86f08c",
+      "size": 340,
+      "sha256": "791db9ab64691d8bff5cc321eb46d6130bc5ff024f03b6c90370e93889454865",
+      "label": "MoveFinder board scan"
+    },
+    {
+      "address": "0x86f08c",
+      "end": "0x86fb60",
+      "size": 2772,
+      "sha256": "62ac92b6fbe5d3dfa3c1aefd0faf10e15be42623252570e27b1c512a5dbe6cfa",
+      "label": "MoveFinder directional tests"
+    },
+    {
+      "address": "0x86fb60",
+      "end": "0x86fbd0",
+      "size": 112,
+      "sha256": "313866dfd054bcb16cb9053ca593d0fbdcee76ec7c956763edb1059ab0172c64",
+      "label": "support compatibility"
+    },
+    {
+      "address": "0x86fbd0",
+      "end": "0x86fc3c",
+      "size": 108,
+      "sha256": "093cf6b4a0f3a7efdde77ad178d4c149d60c67c4787c3e83a63eb37d42f7c1c2",
+      "label": "support pair final check"
+    },
+    {
+      "address": "0x86fc3c",
+      "end": "0x86fde0",
+      "size": 420,
+      "sha256": "0c82e8809a6e16a4d04d08980a4196e990c3e64696d0438576eb226d6a21c34c",
+      "label": "move result builder"
+    },
+    {
+      "address": "0x85cac8",
+      "end": "0x85cb14",
+      "size": 76,
+      "sha256": "d24534d5c6039341fcde6c0f20d2afe83fbf1fc00eac415b1145d8596201454c",
+      "label": "active configuration selection"
+    },
+    {
+      "address": "0x858c6c",
+      "end": "0x858d80",
+      "size": 276,
+      "sha256": "0fc22f5c0aad4a6fda775da0021f2ae0654be7344d940941c9a86b98b98f94a8",
+      "label": "Board palette snapshot reset"
+    },
+    {
+      "address": "0x85a938",
+      "end": "0x85a9d0",
+      "size": 152,
+      "sha256": "23f8b5f932b6ca3a9731cafb4421852f6b5bc4dd94c2bf5055e923349e861942",
+      "label": "bulk color assignment"
+    },
+    {
+      "address": "0x861588",
+      "end": "0x861894",
+      "size": 780,
+      "sha256": "c75909e8e2bb883b3098847772db63724fd30d523415f3ba7858dc088bcb0c9d",
+      "label": "event record creation/queueing"
+    },
+    {
+      "address": "0x86302c",
+      "end": "0x86371c",
+      "size": 1776,
+      "sha256": "20ab41603edde61c588a4ffdfa24def63f8659b7a6207a2f1f57d20973996ce1",
+      "label": "event record dispatch and seed case"
+    },
+    {
+      "address": "0x86ec30",
+      "end": "0x86ece0",
+      "size": 176,
+      "sha256": "1fd60771e1f49b3cfebcdbe6cd2b050c5e4f39544e7922af5916fa8cb0af80e9",
+      "label": "RNG manager reseed"
+    },
+    {
+      "address": "0x8a5d84",
+      "end": "0x8a5d94",
+      "size": 16,
+      "sha256": "5f32dd71206463b4027eb232a869f90e5e2ec3f5b5b05d48441b152f5bb8258e",
+      "label": "wrapper seed forwarding"
+    },
+    {
+      "address": "0x83e6a4",
+      "end": "0x83e8c8",
+      "size": 548,
+      "sha256": "69807fde638aea095fc8395e14d16db8aaa63c8ed2846d3150d2bc97d2f13bbb",
+      "label": "MT seed expansion"
+    },
+    {
+      "address": "0x84c560",
+      "end": "0x84c764",
+      "size": 516,
+      "sha256": "7ff7e6c310353e1c9a69e1c900d25638d152a36a47c560eb164200d6ad77c8db",
+      "label": "RareGemsLogic constructor"
+    },
+    {
+      "address": "0x84ce7c",
+      "end": "0x84cf18",
+      "size": 156,
+      "sha256": "213b16529f5676c98eefe17e8c9a859bb481b72c73929ab6af03ba7499f3718d",
+      "label": "RareGemsLogic clears active rare gem"
+    },
+    {
+      "address": "0xd68eb4",
+      "end": "0xd6a0c8",
+      "size": 4628,
+      "sha256": "51fcad77aafd8ed534391c57ebd696c1220127002da482604d22c386aa972f57",
+      "label": "app update caller containing logic slot 0x338"
+    },
+    {
+      "address": "0x85bdfc",
+      "end": "0x85c8a8",
+      "size": 2732,
+      "sha256": "f90a9b05d13f8be84223874e76d4b57de651f2f3991867d94de75b5b78dc8e1b",
+      "label": "logic constructor receiver bindings"
+    },
+    {
+      "address": "0xd65de8",
+      "end": "0xd67234",
+      "size": 5196,
+      "sha256": "e65c8adbdc2eb4a26a7faee9b1321ba71d4ee142b2dbb6943263492837b3ca4e",
+      "label": "app initialization stores concrete logic receiver"
+    },
+    {
+      "address": "0xd5bb84",
+      "end": "0xd5bc14",
+      "size": 144,
+      "sha256": "29ef20c35f3aaf93f1d52de91609980b95b9b2acbcff598f2172f52a117e5e8f",
+      "label": "logic singleton constructor/getter"
+    }
+  ],
+  "checkpoints": [
+    {
+      "id": "update_gates",
+      "annotation": "Two entry gates and an empty work-vector gate precede the concrete (1,0) refill call.",
+      "instructions": [
+        {
+          "address": "0x85f510",
+          "mnemonic": "ldr",
+          "operands": "x0, [x0, #0x2b0]"
+        },
+        {
+          "address": "0x85f518",
+          "mnemonic": "ldr",
+          "operands": "x8, [x8, #0xa0]"
+        },
+        {
+          "address": "0x85f51c",
+          "mnemonic": "blr",
+          "operands": "x8"
+        },
+        {
+          "address": "0x85f520",
+          "mnemonic": "tbnz",
+          "operands": "w0, #0, #0x85f54c"
+        },
+        {
+          "address": "0x85f540",
+          "mnemonic": "ldr",
+          "operands": "x8, [x8, #0x208]"
+        },
+        {
+          "address": "0x85f544",
+          "mnemonic": "blr",
+          "operands": "x8"
+        },
+        {
+          "address": "0x85f548",
+          "mnemonic": "tbz",
+          "operands": "w0, #0, #0x85f55c"
+        },
+        {
+          "address": "0x85f7c4",
+          "mnemonic": "ldr",
+          "operands": "x8, [x19, #0x3d0]"
+        },
+        {
+          "address": "0x85f7c8",
+          "mnemonic": "ldr",
+          "operands": "x9, [x19, #0x3c8]"
+        },
+        {
+          "address": "0x85f7cc",
+          "mnemonic": "cmp",
+          "operands": "x8, x9"
+        },
+        {
+          "address": "0x85f7d0",
+          "mnemonic": "b.ne",
+          "operands": "#0x85f804"
+        },
+        {
+          "address": "0x85f7d8",
+          "mnemonic": "mov",
+          "operands": "w1, #1"
+        },
+        {
+          "address": "0x85f7e0",
+          "mnemonic": "mov",
+          "operands": "w2, wzr"
+        },
+        {
+          "address": "0x85f7e4",
+          "mnemonic": "ldr",
+          "operands": "x8, [x8, #0xf0]"
+        },
+        {
+          "address": "0x85f7e8",
+          "mnemonic": "blr",
+          "operands": "x8"
+        },
+        {
+          "address": "0xd69044",
+          "mnemonic": "add",
+          "operands": "x28, x19, #0x320"
+        },
+        {
+          "address": "0xd691e4",
+          "mnemonic": "ldr",
+          "operands": "x0, [x28]"
+        },
+        {
+          "address": "0xd691ec",
+          "mnemonic": "ldr",
+          "operands": "x8, [x8, #0x338]"
+        },
+        {
+          "address": "0xd691f0",
+          "mnemonic": "blr",
+          "operands": "x8"
+        }
+      ]
+    },
+    {
+      "id": "pending_gates",
+      "annotation": "Refill waits for positive gem +0x1c or byte +0x17; flags propagate masked to bit zero.",
+      "instructions": [
+        {
+          "address": "0x8607bc",
+          "mnemonic": "ldr",
+          "operands": "x23, [x26]"
+        },
+        {
+          "address": "0x8607cc",
+          "mnemonic": "ldr",
+          "operands": "x8, [x8, #0x68]"
+        },
+        {
+          "address": "0x8607d0",
+          "mnemonic": "blr",
+          "operands": "x8"
+        },
+        {
+          "address": "0x8607d4",
+          "mnemonic": "fcmp",
+          "operands": "s0, #0.0"
+        },
+        {
+          "address": "0x8607d8",
+          "mnemonic": "b.gt",
+          "operands": "#0x860890"
+        },
+        {
+          "address": "0x8607e4",
+          "mnemonic": "ldr",
+          "operands": "x8, [x8, #0x58]"
+        },
+        {
+          "address": "0x8607e8",
+          "mnemonic": "blr",
+          "operands": "x8"
+        },
+        {
+          "address": "0x8607ec",
+          "mnemonic": "tbz",
+          "operands": "w0, #0, #0x8607b0"
+        },
+        {
+          "address": "0x84100c",
+          "mnemonic": "ldr",
+          "operands": "s0, [x0, #0x1c]"
+        },
+        {
+          "address": "0x840ffc",
+          "mnemonic": "ldrb",
+          "operands": "w0, [x0, #0x17]"
+        },
+        {
+          "address": "0x860818",
+          "mnemonic": "and",
+          "operands": "w1, w22, #1"
+        },
+        {
+          "address": "0x86081c",
+          "mnemonic": "and",
+          "operands": "w2, w21, #1"
+        },
+        {
+          "address": "0x860824",
+          "mnemonic": "ldr",
+          "operands": "x8, [x8, #0xf8]"
+        },
+        {
+          "address": "0x860828",
+          "mnemonic": "blr",
+          "operands": "x8"
+        },
+        {
+          "address": "0x86082c",
+          "mnemonic": "tbnz",
+          "operands": "w21, #0, #0x860860"
+        }
+      ]
+    },
+    {
+      "id": "setup_flags",
+      "annotation": "Reset Board, then use A=0 and B from active rare-gem slot +0xe8 or a nonempty config +0x1e0 string.",
+      "instructions": [
+        {
+          "address": "0x85e4f0",
+          "mnemonic": "ldr",
+          "operands": "x0, [x19, #0x2a0]"
+        },
+        {
+          "address": "0x85e4f8",
+          "mnemonic": "ldr",
+          "operands": "x8, [x8, #0x28]"
+        },
+        {
+          "address": "0x85e4fc",
+          "mnemonic": "blr",
+          "operands": "x8"
+        },
+        {
+          "address": "0x85e8c4",
+          "mnemonic": "ldr",
+          "operands": "x8, [x19, #0x328]"
+        },
+        {
+          "address": "0x85e8c8",
+          "mnemonic": "ldr",
+          "operands": "x0, [x8, #0x30]"
+        },
+        {
+          "address": "0x85e8cc",
+          "mnemonic": "cbz",
+          "operands": "x0, #0x85e8e4"
+        },
+        {
+          "address": "0x85e8d4",
+          "mnemonic": "ldr",
+          "operands": "x8, [x8, #0xe8]"
+        },
+        {
+          "address": "0x85e8d8",
+          "mnemonic": "blr",
+          "operands": "x8"
+        },
+        {
+          "address": "0x85e8dc",
+          "mnemonic": "mov",
+          "operands": "w20, w0"
+        },
+        {
+          "address": "0x85e8ec",
+          "mnemonic": "ldrb",
+          "operands": "w9, [x8, #0x1e0]"
+        },
+        {
+          "address": "0x85e8fc",
+          "mnemonic": "csel",
+          "operands": "x9, x11, x10, eq"
+        },
+        {
+          "address": "0x85e900",
+          "mnemonic": "cbnz",
+          "operands": "x9, #0x85e924"
+        },
+        {
+          "address": "0x85e91c",
+          "mnemonic": "bl",
+          "operands": "#0x17a2f90"
+        },
+        {
+          "address": "0x85e920",
+          "mnemonic": "cbz",
+          "operands": "w0, #0x85e928"
+        },
+        {
+          "address": "0x85e924",
+          "mnemonic": "mov",
+          "operands": "w20, #1"
+        },
+        {
+          "address": "0x85e92c",
+          "mnemonic": "and",
+          "operands": "w2, w20, #1"
+        },
+        {
+          "address": "0x85e934",
+          "mnemonic": "mov",
+          "operands": "w1, wzr"
+        },
+        {
+          "address": "0x85e938",
+          "mnemonic": "ldr",
+          "operands": "x8, [x8, #0xf0]"
+        },
+        {
+          "address": "0x85e940",
+          "mnemonic": "blr",
+          "operands": "x8"
+        }
+      ]
+    },
+    {
+      "id": "other_contexts",
+      "annotation": "Other refill contexts supply the same A=1,B=0; active byte is an entry gate in 0x86614c.",
+      "instructions": [
+        {
+          "address": "0x86616c",
+          "mnemonic": "ldrb",
+          "operands": "w8, [x0, #0x3c]"
+        },
+        {
+          "address": "0x866170",
+          "mnemonic": "cbz",
+          "operands": "w8, #0x8661ec"
+        },
+        {
+          "address": "0x866190",
+          "mnemonic": "mov",
+          "operands": "w1, #1"
+        },
+        {
+          "address": "0x86619c",
+          "mnemonic": "mov",
+          "operands": "w2, wzr"
+        },
+        {
+          "address": "0x8661a0",
+          "mnemonic": "blr",
+          "operands": "x8"
+        },
+        {
+          "address": "0x8666dc",
+          "mnemonic": "mov",
+          "operands": "w1, #1"
+        },
+        {
+          "address": "0x8666e0",
+          "mnemonic": "mov",
+          "operands": "w2, wzr"
+        },
+        {
+          "address": "0x8666e8",
+          "mnemonic": "ldr",
+          "operands": "x8, [x8, #0xf0]"
+        },
+        {
+          "address": "0x8666ec",
+          "mnemonic": "blr",
+          "operands": "x8"
+        }
+      ]
+    },
+    {
+      "id": "acceptance",
+      "annotation": "A skips match rejection only; MoveFinder result count must still be positive.",
+      "instructions": [
+        {
+          "address": "0x860bec",
+          "mnemonic": "tbnz",
+          "operands": "w1, #0, #0x860c3c"
+        },
+        {
+          "address": "0x860c00",
+          "mnemonic": "ldr",
+          "operands": "x8, [x8, #0xc8]"
+        },
+        {
+          "address": "0x860c04",
+          "mnemonic": "blr",
+          "operands": "x8"
+        },
+        {
+          "address": "0x860c20",
+          "mnemonic": "lsr",
+          "operands": "x21, x9, #3"
+        },
+        {
+          "address": "0x860c24",
+          "mnemonic": "ldr",
+          "operands": "x8, [x8, #0x48]"
+        },
+        {
+          "address": "0x860c28",
+          "mnemonic": "blr",
+          "operands": "x8"
+        },
+        {
+          "address": "0x860c2c",
+          "mnemonic": "cmp",
+          "operands": "w21, #0"
+        },
+        {
+          "address": "0x860c30",
+          "mnemonic": "b.le",
+          "operands": "#0x860c3c"
+        },
+        {
+          "address": "0x860c34",
+          "mnemonic": "mov",
+          "operands": "w0, wzr"
+        },
+        {
+          "address": "0x860c48",
+          "mnemonic": "ldr",
+          "operands": "x0, [x1, #0x90]"
+        },
+        {
+          "address": "0x860c50",
+          "mnemonic": "ldr",
+          "operands": "x8, [x8, #0x30]"
+        },
+        {
+          "address": "0x860c54",
+          "mnemonic": "blr",
+          "operands": "x8"
+        },
+        {
+          "address": "0x860c6c",
+          "mnemonic": "lsr",
+          "operands": "x19, x9, #3"
+        },
+        {
+          "address": "0x860c78",
+          "mnemonic": "cmp",
+          "operands": "w19, #0"
+        },
+        {
+          "address": "0x860c7c",
+          "mnemonic": "cset",
+          "operands": "w0, gt"
+        }
+      ]
+    },
+    {
+      "id": "cardinality_and_retries",
+      "annotation": "Zero returns; one finite candidate pass; bulk loop revisits B test with no visible retry bound.",
+      "instructions": [
+        {
+          "address": "0x8609fc",
+          "mnemonic": "cbz",
+          "operands": "x8, #0x860b88"
+        },
+        {
+          "address": "0x860a00",
+          "mnemonic": "cmp",
+          "operands": "x8, #1"
+        },
+        {
+          "address": "0x860a04",
+          "mnemonic": "b.ne",
+          "operands": "#0x860a88"
+        },
+        {
+          "address": "0x860a84",
+          "mnemonic": "tbnz",
+          "operands": "w0, #0, #0x860b88"
+        },
+        {
+          "address": "0x860a88",
+          "mnemonic": "tbnz",
+          "operands": "w21, #0, #0x860a70"
+        },
+        {
+          "address": "0x860a98",
+          "mnemonic": "ldr",
+          "operands": "x8, [x8, #0xe8]"
+        },
+        {
+          "address": "0x860a9c",
+          "mnemonic": "blr",
+          "operands": "x8"
+        },
+        {
+          "address": "0x860aa0",
+          "mnemonic": "b",
+          "operands": "#0x860a70"
+        },
+        {
+          "address": "0x860b60",
+          "mnemonic": "str",
+          "operands": "w8, [x9, #0x54]"
+        },
+        {
+          "address": "0x860b68",
+          "mnemonic": "ldr",
+          "operands": "x8, [x8, #0x100]"
+        },
+        {
+          "address": "0x860b6c",
+          "mnemonic": "blr",
+          "operands": "x8"
+        },
+        {
+          "address": "0x860b70",
+          "mnemonic": "tbnz",
+          "operands": "w0, #0, #0x860b88"
+        },
+        {
+          "address": "0x860b78",
+          "mnemonic": "add",
+          "operands": "x21, x21, #1"
+        },
+        {
+          "address": "0x860b80",
+          "mnemonic": "cmp",
+          "operands": "x21, x9, asr #2"
+        },
+        {
+          "address": "0x860b84",
+          "mnemonic": "b.lo",
+          "operands": "#0x860b4c"
+        }
+      ]
+    },
+    {
+      "id": "match_scan",
+      "annotation": "Board passes cells and matching overrides. Generator scans columns and rows, flushes each line, and groups raw runs.",
+      "instructions": [
+        {
+          "address": "0x85a3e4",
+          "mnemonic": "ldr",
+          "operands": "x8, [x0, #0xd0]"
+        },
+        {
+          "address": "0x85a3e8",
+          "mnemonic": "add",
+          "operands": "x2, x0, #0x58"
+        },
+        {
+          "address": "0x85a3f4",
+          "mnemonic": "ldr",
+          "operands": "x4, [x9, #0x20]"
+        },
+        {
+          "address": "0x85a400",
+          "mnemonic": "mov",
+          "operands": "x1, x9"
+        },
+        {
+          "address": "0x85a404",
+          "mnemonic": "br",
+          "operands": "x4"
+        },
+        {
+          "address": "0x83fcc4",
+          "mnemonic": "blr",
+          "operands": "x8"
+        },
+        {
+          "address": "0x83fcdc",
+          "mnemonic": "blr",
+          "operands": "x8"
+        },
+        {
+          "address": "0x83fd20",
+          "mnemonic": "blr",
+          "operands": "x8"
+        },
+        {
+          "address": "0x83fd38",
+          "mnemonic": "blr",
+          "operands": "x8"
+        },
+        {
+          "address": "0x83fe74",
+          "mnemonic": "ldr",
+          "operands": "x8, [x8, #0x30]"
+        },
+        {
+          "address": "0x83fe78",
+          "mnemonic": "blr",
+          "operands": "x8"
+        },
+        {
+          "address": "0x83ff44",
+          "mnemonic": "cmp",
+          "operands": "x23, #8"
+        },
+        {
+          "address": "0x83ff98",
+          "mnemonic": "blr",
+          "operands": "x8"
+        },
+        {
+          "address": "0x83ffb0",
+          "mnemonic": "blr",
+          "operands": "x8"
+        },
+        {
+          "address": "0x84000c",
+          "mnemonic": "blr",
+          "operands": "x8"
+        },
+        {
+          "address": "0x840148",
+          "mnemonic": "ldr",
+          "operands": "x8, [x8, #0x30]"
+        },
+        {
+          "address": "0x84014c",
+          "mnemonic": "blr",
+          "operands": "x8"
+        },
+        {
+          "address": "0x840274",
+          "mnemonic": "ldr",
+          "operands": "x8, [x9, #0x20]"
+        },
+        {
+          "address": "0x84027c",
+          "mnemonic": "blr",
+          "operands": "x8"
+        }
+      ]
+    },
+    {
+      "id": "matcher_rules",
+      "annotation": "Start checks nonzero effective color and type !=4; advance also invokes Gem eligibility; color 8 has special handling; emit threshold is 3.",
+      "instructions": [
+        {
+          "address": "0x84868c",
+          "mnemonic": "cbz",
+          "operands": "x1, #0x8486b0"
+        },
+        {
+          "address": "0x848690",
+          "mnemonic": "ldr",
+          "operands": "w8, [x1, #0x54]"
+        },
+        {
+          "address": "0x84869c",
+          "mnemonic": "csel",
+          "operands": "w11, w8, w2, eq"
+        },
+        {
+          "address": "0x8486a0",
+          "mnemonic": "cbz",
+          "operands": "w11, #0x8486b0"
+        },
+        {
+          "address": "0x8486a4",
+          "mnemonic": "ldr",
+          "operands": "w8, [x20, #0x34]"
+        },
+        {
+          "address": "0x8486a8",
+          "mnemonic": "cmp",
+          "operands": "w8, #4"
+        },
+        {
+          "address": "0x8486ac",
+          "mnemonic": "b.ne",
+          "operands": "#0x8486c8"
+        },
+        {
+          "address": "0x848768",
+          "mnemonic": "csel",
+          "operands": "w22, w8, w2, eq"
+        },
+        {
+          "address": "0x84876c",
+          "mnemonic": "cbz",
+          "operands": "w22, #0x8487a4"
+        },
+        {
+          "address": "0x848778",
+          "mnemonic": "ldr",
+          "operands": "x8, [x8, #0xe8]"
+        },
+        {
+          "address": "0x84877c",
+          "mnemonic": "blr",
+          "operands": "x8"
+        },
+        {
+          "address": "0x848780",
+          "mnemonic": "tbz",
+          "operands": "w0, #0, #0x8487a4"
+        },
+        {
+          "address": "0x848790",
+          "mnemonic": "cmp",
+          "operands": "w8, #8"
+        },
+        {
+          "address": "0x848794",
+          "mnemonic": "b.ne",
+          "operands": "#0x848804"
+        },
+        {
+          "address": "0x848798",
+          "mnemonic": "mov",
+          "operands": "x21, xzr"
+        },
+        {
+          "address": "0x84881c",
+          "mnemonic": "cmp",
+          "operands": "w22, #8"
+        },
+        {
+          "address": "0x848820",
+          "mnemonic": "b.ne",
+          "operands": "#0x8488b0"
+        },
+        {
+          "address": "0x8488f4",
+          "mnemonic": "ldr",
+          "operands": "x8, [x10]"
+        },
+        {
+          "address": "0x8488fc",
+          "mnemonic": "blr",
+          "operands": "x8"
+        },
+        {
+          "address": "0x848908",
+          "mnemonic": "str",
+          "operands": "w22, [x19, #0x10]"
+        },
+        {
+          "address": "0x84890c",
+          "mnemonic": "sub",
+          "operands": "w9, w9, w8"
+        },
+        {
+          "address": "0x848910",
+          "mnemonic": "stp",
+          "operands": "w9, w8, [x19, #0x68]"
+        },
+        {
+          "address": "0x848960",
+          "mnemonic": "ldr",
+          "operands": "w8, [x0, #0x68]"
+        },
+        {
+          "address": "0x848964",
+          "mnemonic": "cmp",
+          "operands": "w8, #3"
+        },
+        {
+          "address": "0x848968",
+          "mnemonic": "b.ge",
+          "operands": "#0x84898c"
+        }
+      ]
+    },
+    {
+      "id": "eligibility",
+      "annotation": "Raw Gem eligibility flags, without invented user-facing state names.",
+      "instructions": [
+        {
+          "address": "0x84127c",
+          "mnemonic": "ldrb",
+          "operands": "w8, [x0, #0x25]"
+        },
+        {
+          "address": "0x841280",
+          "mnemonic": "cbz",
+          "operands": "w8, #0x8412b4"
+        },
+        {
+          "address": "0x841284",
+          "mnemonic": "ldrb",
+          "operands": "w8, [x0, #0x12]"
+        },
+        {
+          "address": "0x841288",
+          "mnemonic": "cbnz",
+          "operands": "w8, #0x8412b4"
+        },
+        {
+          "address": "0x84128c",
+          "mnemonic": "ldrb",
+          "operands": "w8, [x0, #0xbd]"
+        },
+        {
+          "address": "0x841290",
+          "mnemonic": "cbz",
+          "operands": "w8, #0x84129c"
+        },
+        {
+          "address": "0x841294",
+          "mnemonic": "ldrb",
+          "operands": "w8, [x0, #0xbe]"
+        },
+        {
+          "address": "0x841298",
+          "mnemonic": "cbz",
+          "operands": "w8, #0x8412b4"
+        },
+        {
+          "address": "0x84129c",
+          "mnemonic": "ldrb",
+          "operands": "w8, [x0, #0x14]"
+        },
+        {
+          "address": "0x8412a0",
+          "mnemonic": "cbnz",
+          "operands": "w8, #0x8412b4"
+        },
+        {
+          "address": "0x8412a4",
+          "mnemonic": "ldrb",
+          "operands": "w8, [x0, #0x16]"
+        },
+        {
+          "address": "0x8412a8",
+          "mnemonic": "cbnz",
+          "operands": "w8, #0x8412b4"
+        },
+        {
+          "address": "0x8412ac",
+          "mnemonic": "ldrb",
+          "operands": "w8, [x0, #0x18]"
+        },
+        {
+          "address": "0x8412b0",
+          "mnemonic": "cbz",
+          "operands": "w8, #0x8412bc"
+        },
+        {
+          "address": "0x8412b4",
+          "mnemonic": "mov",
+          "operands": "w0, wzr"
+        },
+        {
+          "address": "0x8412b8",
+          "mnemonic": "ret",
+          "operands": ""
+        },
+        {
+          "address": "0x8412bc",
+          "mnemonic": "ldr",
+          "operands": "w8, [x0, #0x34]"
+        },
+        {
+          "address": "0x8412c0",
+          "mnemonic": "cmp",
+          "operands": "w8, #4"
+        },
+        {
+          "address": "0x8412c4",
+          "mnemonic": "cset",
+          "operands": "w0, ne"
+        },
+        {
+          "address": "0x8412c8",
+          "mnemonic": "ret",
+          "operands": ""
+        }
+      ]
+    },
+    {
+      "id": "move_gates",
+      "annotation": "MoveFinder clears result markers, checks source rules +0xd, and directional target rules before direct-activation source rules.",
+      "instructions": [
+        {
+          "address": "0x86f000",
+          "mnemonic": "strb",
+          "operands": "wzr, [x9, #0xc1]"
+        },
+        {
+          "address": "0x86f004",
+          "mnemonic": "strb",
+          "operands": "wzr, [x9, #0xc3]"
+        },
+        {
+          "address": "0x86f0b8",
+          "mnemonic": "ldr",
+          "operands": "x8, [x2, #0x28]"
+        },
+        {
+          "address": "0x86f0bc",
+          "mnemonic": "ldrb",
+          "operands": "w8, [x8, #0xd]"
+        },
+        {
+          "address": "0x86f0c0",
+          "mnemonic": "cbz",
+          "operands": "w8, #0x86facc"
+        },
+        {
+          "address": "0x86f158",
+          "mnemonic": "ldrb",
+          "operands": "w8, [x8, #0xb]"
+        },
+        {
+          "address": "0x86f18c",
+          "mnemonic": "ldrb",
+          "operands": "w8, [x8, #0xc]"
+        },
+        {
+          "address": "0x86f1c0",
+          "mnemonic": "ldrb",
+          "operands": "w8, [x8, #9]"
+        },
+        {
+          "address": "0x86f1f4",
+          "mnemonic": "ldrb",
+          "operands": "w8, [x8, #0xa]"
+        },
+        {
+          "address": "0x86f21c",
+          "mnemonic": "ldrb",
+          "operands": "w8, [x8, #0xe]"
+        },
+        {
+          "address": "0x86f258",
+          "mnemonic": "ldrb",
+          "operands": "w8, [x8, #0xf]"
+        },
+        {
+          "address": "0x86f294",
+          "mnemonic": "ldrb",
+          "operands": "w8, [x8, #0x10]"
+        },
+        {
+          "address": "0x86f2cc",
+          "mnemonic": "ldrb",
+          "operands": "w8, [x8, #0x11]"
+        },
+        {
+          "address": "0x86f244",
+          "mnemonic": "ldr",
+          "operands": "x8, [x8, #0x10]"
+        },
+        {
+          "address": "0x86f248",
+          "mnemonic": "blr",
+          "operands": "x8"
+        }
+      ]
+    },
+    {
+      "id": "support_predicate",
+      "annotation": "Supporting gem must exist and pass eligibility; equal color or either kind 5. Kind-5 anchor pair additionally checks raw support colors.",
+      "instructions": [
+        {
+          "address": "0x86fb6c",
+          "mnemonic": "cbz",
+          "operands": "x1, #0x86fbb0"
+        },
+        {
+          "address": "0x86fb80",
+          "mnemonic": "ldr",
+          "operands": "x8, [x8, #0xe8]"
+        },
+        {
+          "address": "0x86fb84",
+          "mnemonic": "blr",
+          "operands": "x8"
+        },
+        {
+          "address": "0x86fb88",
+          "mnemonic": "tbz",
+          "operands": "w0, #0, #0x86fbb0"
+        },
+        {
+          "address": "0x86fb8c",
+          "mnemonic": "ldr",
+          "operands": "w8, [x20, #0x54]"
+        },
+        {
+          "address": "0x86fb90",
+          "mnemonic": "ldr",
+          "operands": "w9, [x19, #0x54]"
+        },
+        {
+          "address": "0x86fb94",
+          "mnemonic": "cmp",
+          "operands": "w8, w9"
+        },
+        {
+          "address": "0x86fb9c",
+          "mnemonic": "ldr",
+          "operands": "w8, [x20, #0x34]"
+        },
+        {
+          "address": "0x86fba0",
+          "mnemonic": "cmp",
+          "operands": "w8, #5"
+        },
+        {
+          "address": "0x86fbc0",
+          "mnemonic": "ldr",
+          "operands": "w8, [x19, #0x34]"
+        },
+        {
+          "address": "0x86fbc4",
+          "mnemonic": "cmp",
+          "operands": "w8, #5"
+        },
+        {
+          "address": "0x86fbd0",
+          "mnemonic": "ldr",
+          "operands": "w8, [x2, #0x34]"
+        },
+        {
+          "address": "0x86fbd4",
+          "mnemonic": "cmp",
+          "operands": "w8, #5"
+        },
+        {
+          "address": "0x86fbf4",
+          "mnemonic": "ldr",
+          "operands": "w11, [x11, #0x54]"
+        },
+        {
+          "address": "0x86fbf8",
+          "mnemonic": "ldr",
+          "operands": "w12, [x12, #0x54]"
+        },
+        {
+          "address": "0x86fbfc",
+          "mnemonic": "cmp",
+          "operands": "w11, w12"
+        },
+        {
+          "address": "0x86fc00",
+          "mnemonic": "b.eq",
+          "operands": "#0x86fc20"
+        }
+      ]
+    },
+    {
+      "id": "palette_switch",
+      "annotation": "Mode switches active configuration pointer; Board reset snapshots its palette.",
+      "instructions": [
+        {
+          "address": "0x85cac8",
+          "mnemonic": "cmp",
+          "operands": "w1, #2"
+        },
+        {
+          "address": "0x85cacc",
+          "mnemonic": "strb",
+          "operands": "wzr, [x0, #0x180]"
+        },
+        {
+          "address": "0x85cad4",
+          "mnemonic": "cmp",
+          "operands": "w1, #1"
+        },
+        {
+          "address": "0x85cae0",
+          "mnemonic": "ldr",
+          "operands": "x8, [x0, #0x280]"
+        },
+        {
+          "address": "0x85cae8",
+          "mnemonic": "ldr",
+          "operands": "x8, [x0, #0x298]"
+        },
+        {
+          "address": "0x85caec",
+          "mnemonic": "str",
+          "operands": "x8, [x0, #0x288]"
+        },
+        {
+          "address": "0x85caf4",
+          "mnemonic": "ldr",
+          "operands": "x8, [x0, #0x290]"
+        },
+        {
+          "address": "0x85cb00",
+          "mnemonic": "add",
+          "operands": "x10, x8, #8"
+        },
+        {
+          "address": "0x85cb08",
+          "mnemonic": "csel",
+          "operands": "x8, xzr, x10, eq"
+        },
+        {
+          "address": "0x85cb0c",
+          "mnemonic": "str",
+          "operands": "x8, [x0, #0x288]"
+        },
+        {
+          "address": "0x858c78",
+          "mnemonic": "ldr",
+          "operands": "x8, [x0, #0x88]"
+        },
+        {
+          "address": "0x858c80",
+          "mnemonic": "add",
+          "operands": "x0, x0, #0x70"
+        },
+        {
+          "address": "0x858c84",
+          "mnemonic": "ldr",
+          "operands": "x8, [x8, #0x288]"
+        },
+        {
+          "address": "0x858c94",
+          "mnemonic": "ldp",
+          "operands": "x1, x2, [x8, #0x1b0]"
+        },
+        {
+          "address": "0x858c98",
+          "mnemonic": "bl",
+          "operands": "#0x7dcd38"
+        },
+        {
+          "address": "0x860a08",
+          "mnemonic": "ldr",
+          "operands": "x8, [x19, #0x288]"
+        },
+        {
+          "address": "0x860a1c",
+          "mnemonic": "ldp",
+          "operands": "x1, x2, [x8, #0x1b0]"
+        },
+        {
+          "address": "0x860a24",
+          "mnemonic": "bl",
+          "operands": "#0x7dcd38"
+        }
+      ]
+    },
+    {
+      "id": "seed_pipeline",
+      "annotation": "Setup creates a -1 record; dispatch parses decimal seed, reseeds manager and stores +0x418. External seed origin/scheduling remain open.",
+      "instructions": [
+        {
+          "address": "0x85e7bc",
+          "mnemonic": "mov",
+          "operands": "w0, w21"
+        },
+        {
+          "address": "0x85e7c0",
+          "mnemonic": "bl",
+          "operands": "#0x17a3240"
+        },
+        {
+          "address": "0x85e814",
+          "mnemonic": "mov",
+          "operands": "w1, #-1"
+        },
+        {
+          "address": "0x85e820",
+          "mnemonic": "ldr",
+          "operands": "x8, [x8, #0x378]"
+        },
+        {
+          "address": "0x85e828",
+          "mnemonic": "blr",
+          "operands": "x8"
+        },
+        {
+          "address": "0x861638",
+          "mnemonic": "mov",
+          "operands": "w0, w22"
+        },
+        {
+          "address": "0x86163c",
+          "mnemonic": "bl",
+          "operands": "#0x17a3240"
+        },
+        {
+          "address": "0x86164c",
+          "mnemonic": "bl",
+          "operands": "#0x866fd0"
+        },
+        {
+          "address": "0x8617b0",
+          "mnemonic": "str",
+          "operands": "x20, [x9], #8"
+        },
+        {
+          "address": "0x8617b4",
+          "mnemonic": "str",
+          "operands": "x9, [x19, #0x1b0]"
+        },
+        {
+          "address": "0x863188",
+          "mnemonic": "add",
+          "operands": "w8, w25, #8"
+        },
+        {
+          "address": "0x863198",
+          "mnemonic": "add",
+          "operands": "x9, x9, #0xc6"
+        },
+        {
+          "address": "0x86319c",
+          "mnemonic": "adr",
+          "operands": "x10, #0x8631ac"
+        },
+        {
+          "address": "0x8631a0",
+          "mnemonic": "ldrh",
+          "operands": "w11, [x9, x8, lsl #1]"
+        },
+        {
+          "address": "0x8631a4",
+          "mnemonic": "add",
+          "operands": "x10, x10, x11, lsl #2"
+        },
+        {
+          "address": "0x863424",
+          "mnemonic": "ldr",
+          "operands": "x21, [x19, #0x1a0]"
+        },
+        {
+          "address": "0x863428",
+          "mnemonic": "add",
+          "operands": "x22, x22, #0x18"
+        },
+        {
+          "address": "0x863438",
+          "mnemonic": "bl",
+          "operands": "#0x17a3560"
+        },
+        {
+          "address": "0x863440",
+          "mnemonic": "mov",
+          "operands": "w1, w0"
+        },
+        {
+          "address": "0x863448",
+          "mnemonic": "ldr",
+          "operands": "x8, [x8, #0x20]"
+        },
+        {
+          "address": "0x86344c",
+          "mnemonic": "blr",
+          "operands": "x8"
+        },
+        {
+          "address": "0x86345c",
+          "mnemonic": "bl",
+          "operands": "#0x17a3560"
+        },
+        {
+          "address": "0x863460",
+          "mnemonic": "str",
+          "operands": "w0, [x19, #0x418]"
+        },
+        {
+          "address": "0x86ec78",
+          "mnemonic": "mov",
+          "operands": "w1, w19"
+        },
+        {
+          "address": "0x86ec80",
+          "mnemonic": "ldr",
+          "operands": "x8, [x8, #0x10]"
+        },
+        {
+          "address": "0x86ec84",
+          "mnemonic": "blr",
+          "operands": "x8"
+        },
+        {
+          "address": "0x8a5d84",
+          "mnemonic": "ldr",
+          "operands": "x0, [x0, #8]"
+        },
+        {
+          "address": "0x8a5d8c",
+          "mnemonic": "ldr",
+          "operands": "x2, [x8, #0x10]"
+        },
+        {
+          "address": "0x8a5d90",
+          "mnemonic": "br",
+          "operands": "x2"
+        }
+      ]
+    },
+    {
+      "id": "support_offsets",
+      "annotation": "Native flat-index support pairs, retained as data rather than copied code.",
+      "instructions": [
+        {
+          "address": "0x86f734",
+          "mnemonic": "mov",
+          "operands": "w4, #-0xa"
+        },
+        {
+          "address": "0x86f738",
+          "mnemonic": "mov",
+          "operands": "w5, #-9"
+        },
+        {
+          "address": "0x86f76c",
+          "mnemonic": "mov",
+          "operands": "w4, #-9"
+        },
+        {
+          "address": "0x86f770",
+          "mnemonic": "mov",
+          "operands": "w5, #-7"
+        },
+        {
+          "address": "0x86f798",
+          "mnemonic": "mov",
+          "operands": "w4, #-7"
+        },
+        {
+          "address": "0x86f79c",
+          "mnemonic": "mov",
+          "operands": "w5, #-6"
+        },
+        {
+          "address": "0x86f7c8",
+          "mnemonic": "mov",
+          "operands": "w4, #-0x10"
+        },
+        {
+          "address": "0x86f7cc",
+          "mnemonic": "mov",
+          "operands": "w5, #-0x18"
+        },
+        {
+          "address": "0x86f840",
+          "mnemonic": "mov",
+          "operands": "w4, #-0xf"
+        },
+        {
+          "address": "0x86f844",
+          "mnemonic": "mov",
+          "operands": "w5, #-7"
+        },
+        {
+          "address": "0x86f86c",
+          "mnemonic": "mov",
+          "operands": "w4, #-7"
+        },
+        {
+          "address": "0x86f870",
+          "mnemonic": "mov",
+          "operands": "w5, #9"
+        },
+        {
+          "address": "0x86f898",
+          "mnemonic": "mov",
+          "operands": "w4, #9"
+        },
+        {
+          "address": "0x86f89c",
+          "mnemonic": "mov",
+          "operands": "w5, #0x11"
+        },
+        {
+          "address": "0x86f8c8",
+          "mnemonic": "mov",
+          "operands": "w4, #2"
+        },
+        {
+          "address": "0x86f8cc",
+          "mnemonic": "mov",
+          "operands": "w5, #3"
+        },
+        {
+          "address": "0x86f938",
+          "mnemonic": "mov",
+          "operands": "w4, #6"
+        },
+        {
+          "address": "0x86f93c",
+          "mnemonic": "mov",
+          "operands": "w5, #7"
+        },
+        {
+          "address": "0x86f96c",
+          "mnemonic": "mov",
+          "operands": "w4, #7"
+        },
+        {
+          "address": "0x86f970",
+          "mnemonic": "mov",
+          "operands": "w5, #9"
+        },
+        {
+          "address": "0x86f998",
+          "mnemonic": "mov",
+          "operands": "w4, #9"
+        },
+        {
+          "address": "0x86f99c",
+          "mnemonic": "mov",
+          "operands": "w5, #0xa"
+        },
+        {
+          "address": "0x86f9c8",
+          "mnemonic": "mov",
+          "operands": "w4, #0x10"
+        },
+        {
+          "address": "0x86f9cc",
+          "mnemonic": "mov",
+          "operands": "w5, #0x18"
+        },
+        {
+          "address": "0x86fa2c",
+          "mnemonic": "mov",
+          "operands": "w4, #-0x11"
+        },
+        {
+          "address": "0x86fa30",
+          "mnemonic": "mov",
+          "operands": "w5, #-9"
+        },
+        {
+          "address": "0x86fa64",
+          "mnemonic": "mov",
+          "operands": "w4, #-9"
+        },
+        {
+          "address": "0x86fa68",
+          "mnemonic": "mov",
+          "operands": "w5, #7"
+        },
+        {
+          "address": "0x86fb04",
+          "mnemonic": "mov",
+          "operands": "w4, #7"
+        },
+        {
+          "address": "0x86fb08",
+          "mnemonic": "mov",
+          "operands": "w5, #0xf"
+        },
+        {
+          "address": "0x86fb30",
+          "mnemonic": "mov",
+          "operands": "w4, #-2"
+        },
+        {
+          "address": "0x86fb34",
+          "mnemonic": "mov",
+          "operands": "w5, #-3"
+        }
+      ]
+    },
+    {
+      "id": "receiver_binding",
+      "annotation": "App field +0x320 receives the singleton constructed through BlitzLogic constructor 0x85bdfc.",
+      "instructions": [
+        {
+          "address": "0xd660b0",
+          "mnemonic": "bl",
+          "operands": "#0xd5bb84"
+        },
+        {
+          "address": "0xd660b4",
+          "mnemonic": "str",
+          "operands": "x0, [x19, #0x320]"
+        },
+        {
+          "address": "0xd661d0",
+          "mnemonic": "bl",
+          "operands": "#0xd5bb84"
+        },
+        {
+          "address": "0xd661d4",
+          "mnemonic": "str",
+          "operands": "x0, [x19, #0x320]"
+        },
+        {
+          "address": "0xd5bbe4",
+          "mnemonic": "mov",
+          "operands": "x0, x19"
+        },
+        {
+          "address": "0xd5bbe8",
+          "mnemonic": "bl",
+          "operands": "#0x85bdfc"
+        }
+      ]
+    },
+    {
+      "id": "match_bounds",
+      "annotation": "Match initializes bounding box from member positions; overlap compares the four bounds.",
+      "instructions": [
+        {
+          "address": "0x8587d8",
+          "mnemonic": "ldp",
+          "operands": "w1, w0, [x17, #0x58]"
+        },
+        {
+          "address": "0x8587dc",
+          "mnemonic": "strb",
+          "operands": "w15, [x17, #0xc2]"
+        },
+        {
+          "address": "0x858830",
+          "mnemonic": "cmp",
+          "operands": "x12, #1"
+        },
+        {
+          "address": "0x858834",
+          "mnemonic": "b.hi",
+          "operands": "#0x858854"
+        },
+        {
+          "address": "0x8588ec",
+          "mnemonic": "ldr",
+          "operands": "w8, [x0, #0x4c]"
+        },
+        {
+          "address": "0x8588f0",
+          "mnemonic": "ldr",
+          "operands": "w9, [x1, #0x50]"
+        },
+        {
+          "address": "0x858904",
+          "mnemonic": "ldr",
+          "operands": "w8, [x0, #0x50]"
+        },
+        {
+          "address": "0x858908",
+          "mnemonic": "ldr",
+          "operands": "w9, [x1, #0x4c]"
+        },
+        {
+          "address": "0x85891c",
+          "mnemonic": "ldr",
+          "operands": "w8, [x0, #0x54]"
+        },
+        {
+          "address": "0x858920",
+          "mnemonic": "ldr",
+          "operands": "w9, [x1, #0x58]"
+        },
+        {
+          "address": "0x858934",
+          "mnemonic": "ldr",
+          "operands": "w8, [x0, #0x58]"
+        },
+        {
+          "address": "0x858938",
+          "mnemonic": "ldr",
+          "operands": "w9, [x1, #0x54]"
+        }
+      ]
+    }
+  ],
+  "relocations": [
+    {
+      "address": "0x17ca7f0",
+      "type": 1027,
+      "addend": "0x8606f0"
+    },
+    {
+      "address": "0x17ca7f8",
+      "type": 1027,
+      "addend": "0x8609a4"
+    },
+    {
+      "address": "0x17ca800",
+      "type": 1027,
+      "addend": "0x860bd8"
+    },
+    {
+      "address": "0x17caa38",
+      "type": 1027,
+      "addend": "0x85f4fc"
+    },
+    {
+      "address": "0x17caa10",
+      "type": 1027,
+      "addend": "0x85e3d4"
+    },
+    {
+      "address": "0x17caae8",
+      "type": 1027,
+      "addend": "0x86614c"
+    },
+    {
+      "address": "0x17cab70",
+      "type": 1027,
+      "addend": "0x8666cc"
+    },
+    {
+      "address": "0x17ca498",
+      "type": 1027,
+      "addend": "0x85a938"
+    },
+    {
+      "address": "0x17ca478",
+      "type": 1027,
+      "addend": "0x85a3e4"
+    },
+    {
+      "address": "0x17ca3e8",
+      "type": 1027,
+      "addend": "0x858e50"
+    },
+    {
+      "address": "0x17ca488",
+      "type": 1027,
+      "addend": "0x85a710"
+    },
+    {
+      "address": "0x17c6c10",
+      "type": 1027,
+      "addend": "0x83fc0c"
+    },
+    {
+      "address": "0x17c73d0",
+      "type": 1027,
+      "addend": "0x84867c"
+    },
+    {
+      "address": "0x17c73d8",
+      "type": 1027,
+      "addend": "0x848740"
+    },
+    {
+      "address": "0x17c73e0",
+      "type": 1027,
+      "addend": "0x848918"
+    },
+    {
+      "address": "0x17c73b0",
+      "type": 1027,
+      "addend": "0x848944"
+    },
+    {
+      "address": "0x17c6d20",
+      "type": 1027,
+      "addend": "0x84127c"
+    },
+    {
+      "address": "0x17cb4a8",
+      "type": 1027,
+      "addend": "0x86ef38"
+    },
+    {
+      "address": "0x17cb4b0",
+      "type": 1027,
+      "addend": "0x86f08c"
+    },
+    {
+      "address": "0x17cb478",
+      "type": 1027,
+      "addend": "0x86fb60"
+    },
+    {
+      "address": "0x17cb480",
+      "type": 1027,
+      "addend": "0x86fbd0"
+    },
+    {
+      "address": "0x17cb488",
+      "type": 1027,
+      "addend": "0x86fc3c"
+    },
+    {
+      "address": "0x17ca950",
+      "type": 1027,
+      "addend": "0x85cac8"
+    },
+    {
+      "address": "0x17cb3d8",
+      "type": 1027,
+      "addend": "0x86ec30"
+    },
+    {
+      "address": "0x17ca5d0",
+      "type": 1027,
+      "addend": "0x85b55c"
+    },
+    {
+      "address": "0x17ca908",
+      "type": 1027,
+      "addend": "0x85c960"
+    },
+    {
+      "address": "0x17c6ca0",
+      "type": 1027,
+      "addend": "0x84100c"
+    },
+    {
+      "address": "0x17c6c90",
+      "type": 1027,
+      "addend": "0x840ffc"
+    },
+    {
+      "address": "0x17caa78",
+      "type": 1027,
+      "addend": "0x861588"
+    },
+    {
+      "address": "0x17c7c58",
+      "type": 1027,
+      "addend": "0x84ce7c"
+    },
+    {
+      "address": "0x17c7c80",
+      "type": 1027,
+      "addend": "0x489d27"
+    },
+    {
+      "address": "0x17ca8b0",
+      "type": 1027,
+      "addend": "0x86302c"
+    }
+  ],
+  "jump_tables": [
+    {
+      "address": "0x48a0c6",
+      "base": "0x8631ac",
+      "first_case": -8,
+      "entries": [
+        175,
+        0,
+        0,
+        0,
+        186,
+        261,
+        261,
+        158
+      ],
+      "scale": 4
+    }
+  ],
+  "scope": "Static evidence only. Labels are analyst descriptions; no runtime reachability asserted."
+}

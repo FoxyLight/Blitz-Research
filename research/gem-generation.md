@@ -19,7 +19,20 @@ See the [full native analysis report](experiment-02-native-gem-generation.md), [
 - **INFERRED:** Conditional acceptance affects the resulting distribution. Full-span repeated swaps do not justify assuming a uniform permutation. The finisher's `count-1` and `+1` index arithmetic also needs careful modeling.
 - **OPEN:** Runtime branch frequency during ordinary 60-second Blitz, complete match/move rules, exact probabilities and endpoints, active palette overrides, external seed origin, and score/time/boost dependence elsewhere.
 
-The evidence is static. APK verification passed **320 checks**; extracted-ELF verification passed **319**. No native code or game service was executed or accessed. The next recommended work is **Experiment 03: Refill Context and Board Validation**, as specified in the full report.
+The evidence is static. APK verification passed **320 checks**; extracted-ELF verification passed **319**. No native code or game service was executed or accessed. The resulting Experiment 03 recommendation has now been investigated below; this Experiment 02 summary is retained as its historical result.
+
+## Experiment 03 result: 2026-11-01
+
+See [Refill Context and Board Validation](experiment-03-refill-context-and-board-validation.md), its [static evidence](evidence/experiment-03-arm64.json), [validation record](evidence/experiment-03-validation.json), and [independent model results](evidence/experiment-03-model-results.json).
+
+- **VERIFIED, static:** The concrete app/logic receiver chain reaches the update-context refill caller with `(A=1,B=0)`. Setup uses `A=0` and derives B from a rare-object predicate or nonempty preset/configuration string. Pending gem fields can defer refill.
+- **VERIFIED, static:** A skips immediate-match rejection only; a positive move count is still required. B skips bulk reassignment but is ignored in the one-replacement color loop. Single-candidate exhaustion returns with the last attempted color, without a local fallback. Bulk retry has no visible local iteration cap.
+- **VERIFIED, static:** The match detector uses row/column runs, eligibility flags, optional match-color overrides and special numeric color handling. The move finder uses directional permissions and supporting-pair patterns. Single refill reads the active palette; bulk refill reads the Board snapshot. A queued -1 seed command reaches RNG reseeding and the stored seed field.
+- **VERIFIED, model execution:** 57 hand-authored ordinary-gem cases pass, including two independently written move calculations compared on the fixtures. These results do not constitute execution of or comparison against the native game.
+- **INFERRED:** The caller contexts correspond to ongoing cascades and reset/setup. Persistently invalid bulk states lack a termination guarantee inside the examined loop; an external invariant may prevent such states.
+- **OPEN:** Runtime frequency, complete special-type/override semantics, palette/preset preconditions, seed origin and first-draw order, and externally enforced termination conditions. These findings do not establish adaptive difficulty.
+
+Experiment 03 passed **404 static APK checks** and **403 ELF-only checks**, while the previous APK verifier again passed 320. The next recommendation is **Experiment 04: Refill Preconditions, Preset Palettes, and Seed Ordering**, as scoped in the Experiment 03 report.
 
 ## VERIFIED: Binary evidence
 
@@ -70,7 +83,7 @@ These were research leads, not conclusions. Experiment 02 establishes a finisher
 
 ## Historical next-experiment plan (2026-10-29)
 
-Steps 1–6 below motivated Experiment 02 and have now been addressed with a comparable Capstone/ELF workflow. Step 7 was **not performed** and is outside this session's prohibition on APK/native execution. The current next experiment is the static/modeling plan in the Experiment 02 report.
+Steps 1–6 below motivated Experiment 02 and have now been addressed with a comparable Capstone/ELF workflow. Step 7 was **not performed** and is outside this session's prohibition on APK/native execution. The current next experiment is the static/modeling plan in the Experiment 03 report.
 
 1. Open the ARM64 library in Ghidra, record image base and analysis settings.
 2. Locate cross-references to the exact `REPLAY : RandomGemPicker rowId :` and `REPLAY : SpawnGems optionIndex` strings.

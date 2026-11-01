@@ -1,0 +1,59 @@
+{
+  "python": "3.14.7",
+  "capstone": "5.0.7",
+  "pyelftools": "0.33",
+  "function_ranges": 40,
+  "instruction_checkpoints": 285,
+  "relocations": 32,
+  "decoded_jump_tables": [
+    {
+      "-8": "0x863468",
+      "-7": "0x8631ac",
+      "-6": "0x8631ac",
+      "-5": "0x8631ac",
+      "-4": "0x863494",
+      "-3": "0x8635c0",
+      "-2": "0x8635c0",
+      "-1": "0x863424"
+    }
+  ],
+  "date": "2026-11-01",
+  "baseline_commit": "92505f2cd5fa16eb5fd9b90822d291829219b3b2",
+  "status": "PASS",
+  "apk_sha256": "1b9c3c6b9eb25a3de568802b5242f838e7618425c70b09c4a7fac00408a8f8b4",
+  "elf_sha256": "21764c7e81d4ae5eb4f6fbc5c8acbe2eb40447bb7b345db6f0859333ef0a2b2f",
+  "static_checks": {
+    "apk": 404,
+    "elf_only": 403,
+    "experiment_02_apk_regression": 320
+  },
+  "model_cases": {
+    "passed": 57,
+    "total": 57,
+    "comparison": "Two independently written ordinary-gem geometric/pattern models, checked on every fixture; no native execution or runtime comparison"
+  },
+  "negative_input": {
+    "sha256": "82dcc5ef349ba61805a9a051c8a984a9f65cd381eaeac36b5f5f67df5e03657b",
+    "expected": "Reject before ELF parsing",
+    "observed_exit_code": 1,
+    "observed_message": "FAIL: ELF SHA-256 gate"
+  },
+  "artifact_preservation": {
+    "apk_unchanged": true,
+    "analysis_elf_unchanged": true
+  },
+  "source_sha256": {
+    "models/refill_model.py": "b675812a840509569f548db27eba676cdd6a71f4bb3130716835697ea878f90a",
+    "scripts/run_experiment_03_model.py": "847884a598d7543cf50c58cad44ebedae2082a7a5293de34de7e9d816bf7013e",
+    "scripts/verify_experiment_03.py": "dec59ae81054e5ec8b2346e901b4d822478c4f22edfa88ce7242762e0ae13f6e",
+    "tests/fixtures/experiment-03-boards.json": "c0972d2e8b359de76d02a4a595fd33373baf6a2f0e28411a479a487abd46f427",
+    "research/evidence/experiment-03-arm64.json": "522731e40971c655331c54d3cfffc362954c9dca71d83f0059033bba07108aa7",
+    "research/evidence/experiment-03-model-results.json": "44f71e57300366c7e7d8dfd9a4969cf106802c61671493af86cdfb64765e8bc0"
+  },
+  "limits": [
+    "Static checks validate recorded bytes/ELF structure, not native execution or runtime reachability.",
+    "Model assertions compare original ordinary-gem implementations and hand-authored expectations, not proprietary outputs.",
+    "Model retry budget is not a native termination condition.",
+    "Special types, wildcard color 8, matching overrides, pool side effects, palette preconditions and seed scheduling remain limited or unresolved."
+  ]
+}

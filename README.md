@@ -25,18 +25,23 @@ An Android APK provided for local research was independently inspected on **2026
 - [Gem generation: evidence, interpretation, and open questions](research/gem-generation.md)
 - [Experiment 02: Native Gem-Generation Analysis](research/experiment-02-native-gem-generation.md)
 - [Experiment 02 reproducible evidence](research/evidence/experiment-02-arm64.json) and [read-only verifier](scripts/verify_experiment_02.py)
+- [Experiment 03: Refill Context and Board Validation](research/experiment-03-refill-context-and-board-validation.md)
+- [Experiment 03 static evidence](research/evidence/experiment-03-arm64.json), [read-only verifier](scripts/verify_experiment_03.py), and [validation record](research/evidence/experiment-03-validation.json)
+- [Independent ordinary-gem model](models/refill_model.py), [original fixtures](tests/fixtures/experiment-03-boards.json), [runner](scripts/run_experiment_03_model.py), and [57-case results](research/evidence/experiment-03-model-results.json)
 
 ## Current status
 
-**VERIFIED (static, exact build):** Experiment 02 independently verified all four previously reported addresses and traced board compaction, replacement creation, palette-based color draws, and board validation. `RandomGemPicker` has a finisher consumer that selects existing gems; the replacement-color path uses `Board::RandomColor`. A single-new-gem branch tries palette colors until a board check passes; a bulk branch can redraw colors until validation succeeds.
+**VERIFIED (static, exact build):** Experiment 02 separated existing-gem picker consumers from replacement-color selection. Experiment 03 maps the update caller's flags `(1,0)` and setup's `(0,B)`, reconstructs match/move validation, and distinguishes zero, single, and bulk replacement branches. A skips immediate-match rejection but still requires a move. B preserves colors only in the bulk color branch and also affects an orchestration callback. The single branch can return after exhausting rejected candidates; the bulk loop has no visible local retry cap.
 
-**OPEN:** Which branches and configurations run during ordinary timed play, exact probabilities and float endpoints, seed origin, palette overrides, and any score/time/difficulty dependence elsewhere. Static board-validation dependence is established; its runtime frequency and complete rule semantics are not.
+**VERIFIED (independent model):** 57 original hand-authored cases pass, including all flag combinations and the 16 ordinary supporting-pair patterns. These are model results compared with reconstructed static rules, not observations of native execution.
 
-**Reproduction:** Capstone 5.0.7 and pyelftools 0.33, with exact APK/ELF SHA-256 gates. The APK run passed 320 checks; ELF-only input passed 319. See Experiment 02 for commands, annotated pseudocode, and limits. No game code was executed and no proprietary binaries are included.
+**OPEN:** Runtime reachability/frequency, special-type and override semantics, external seed origin and first-draw ordering, palette-loading invariants, and termination conditions enforced outside refill. Board validation does not establish adaptive difficulty.
+
+**Reproduction:** Capstone 5.0.7 and pyelftools 0.33 with exact APK/ELF SHA-256 gates. Experiment 03 passed 404 APK checks and 403 ELF-only checks; the Experiment 02 APK regression passed 320. Its independent model needs only Python. See the reports for commands, annotated pseudocode, and limitations. No game code was executed and no proprietary binaries are included.
 
 ## Next experiment
 
-**Experiment 03: Refill Context and Board Validation.** Trace refill flags from cascade callers, reconstruct match/move acceptance rules, and build an independent model with hand-authored board fixtures. Trace palette overrides and seed propagation while keeping the APK/native code unexecuted. See the [Experiment 02 recommendation](research/experiment-02-native-gem-generation.md#recommended-experiment-03-refill-context-and-board-validation).
+**Experiment 04: Refill Preconditions, Preset Palettes, and Seed Ordering.** Trace the configuration/rules and rare-object prerequisites of the identified branches, establish palette synchronization and preserved-color validity conditions, and order queued seed consumption against the first color draw. Keep the same static-only boundary. See the [Experiment 03 recommendation](research/experiment-03-refill-context-and-board-validation.md#findings-ledger-and-recommended-experiment-04).
 
 ---
 

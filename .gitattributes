@@ -1,0 +1,7 @@
+# Keep Experiment 03 source/fixture hashes reproducible across checkouts.
+.gitattributes text eol=lf
+models/refill_model.py text eol=lf
+scripts/*experiment_03*.py text eol=lf
+tests/fixtures/experiment-03-boards.json text eol=lf
+research/evidence/experiment-03*.json text eol=lf
+research/experiment-03-refill-context-and-board-validation.md text eol=lf
